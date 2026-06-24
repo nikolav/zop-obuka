@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opasne materije - ADR klasifikacija</title>
+    <style>
+      body {
+        background-color: #121212;
+        color: #e0e0e0;
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        max-width: 900px;
+        width: 100%;
+        background-color: #1e1e1e;
+        padding: 25px 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+        border: 1px solid #333;
+      }
+      h1 {
+        color: #ffab40;
+        text-align: center;
+        border-bottom: 2px solid #ffab40;
+        padding-bottom: 12px;
+        margin-top: 0;
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+      }
+      h2 {
+        color: #ffcc80;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        border-left: 5px solid #ff9800;
+        padding-left: 12px;
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      h3 {
+        color: #81d4fa;
+        margin-top: 20px;
+        margin-bottom: 8px;
+        font-size: 1.25rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      ul,
+      ol {
+        padding-left: 25px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+      }
+      li {
+        margin-bottom: 6px;
+      }
+      .highlight-box {
+        background-color: #2a2a2a;
+        border-radius: 8px;
+        padding: 15px 20px;
+        margin: 18px 0;
+        border-left: 6px solid #ff9800;
+      }
+      .highlight-box strong {
+        color: #ffab40;
+      }
+      .emoji-big {
+        font-size: 1.4rem;
+        margin-right: 8px;
+      }
+      .two-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 10px 0;
+      }
+      @media (max-width: 600px) {
+        .two-columns {
+          grid-template-columns: 1fr;
+        }
+        body {
+          margin: 10px;
+        }
+        .container {
+          padding: 15px;
+        }
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+      hr {
+        border: 0;
+        height: 1px;
+        background: linear-gradient(to right, #333, #ff9800, #333);
+        margin: 25px 0;
+      }
+      .badge {
+        background-color: #333;
+        color: #ffab40;
+        padding: 2px 10px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: bold;
+        display: inline-block;
+        margin-left: 6px;
+      }
+      .definition {
+        background-color: #252525;
+        padding: 12px 16px;
+        border-radius: 6px;
+        border: 1px solid #444;
+        margin: 8px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🧯 OPASNE MATERIJE (ADR) 📦</h1>
+
+      <!-- UVOD -->
+      <div class="highlight-box">
+        <strong>📌 Definicija:</strong>
+        Opasne materije (roba) su supstance koje svojim svojstvima (zapaljivost,
+        eksplozivnost, toksičnost, reaktivnost, radioaktivnost) mogu ugroziti
+        život, zdravlje, materijalna dobra i životnu sredinu. ⚠️
+      </div>
+
+      <!-- KLASIFIKACIJA ADR -->
+      <h2>📋 ADR klasifikacija (9 klasa)</h2>
+      <p>
+        <strong>ADR</strong>
+        (Evropski sporazum o međunarodnom drumskom transportu opasne robe) je
+        osnovni propis. Klasifikacija zavisi od
+        <strong>hemijskih osobina i stepena opasnosti</strong>
+        .
+      </p>
+
+      <ol style="list-style-type: none; padding-left: 5px">
+        <li
+          style="
+            margin-bottom: 12px;
+            background: #222;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border-left: 6px solid #ff5252;
+          "
+        >
+          <strong>🔴 Klasa 1 - Eksplozivne materije i predmeti</strong>
+          <br />
+          <span style="color: #aaa">
+            Podklase 1.1 do 1.6 (opasnost od eksplozije cele mase, fragmenata,
+            požara...).
+          </span>
+        </li>
+        <li
+          style="
+            margin-bottom: 12px;
+            background: #222;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border-left: 6px solid #ffb74d;
+          "
+        >
+          <strong>🟠 Klasa 2 - Gasovi</strong>
+          <br />
+          <span style="color: #aaa">
+            Zapaljivi (2.1), Nezapaljivi/neotrovni (2.2), Otrovni (2.3). Npr.
+            propan, azot, hlor.
+          </span>
+        </li>
+        <li
+          style="
+            margin-bottom: 12px;
+            background: #222;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border-left: 6px solid #ffb300;
+          "
+        >
+          <strong>🟡 Klasa 3 - Zapaljive tečne materije</strong>
+          <br />
+          <span style="color: #aaa">
+            Tečnosti čije pare mogu da se zapale. Npr. benzin, alkohol, aceton,
+            dizel.
+          </span>
+        </li>
+        <li
+          style="
+            margin-bottom: 12px;
+            background: #222;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border-left: 6px solid #ffcc02;
+          "
+        >
+          <strong>🟡 Klasa 4 - Zapaljive čvrste materije</strong>
+          <br />
+          <span style="color: #aaa">
+            4.1 Zapaljive čvrste materije; 4.2 Samozapaljive; 4.3 Materije koje
+            u dodiru sa vodom razvijaju zapaljive gasove.
+          </span>
+        </li>
+        <li
+          style="
+            margin-bottom: 12px;
+            background: #222;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border-left: 6px solid #4fc3f7;
+          "
+        >
+          <strong>
+            🔵 Klasa 5 - Oksidirajuće materije & organski peroksidi
+          </strong>
+          <br />
+          <span style="color: #aaa">
+            5.1 Oksidanti (podstiču sagorevanje); 5.2 Organski peroksidi
+            (nestabilni, egzotermni).
+          </span>
+        </li>
+        <li
+          style="
+            margin-bottom: 12px;
+            background: #222;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border-left: 6px solid #4caf50;
+          "
+        >
+          <strong>🟢 Klasa 6 - Otrovne (toksične) i infektivne materije</strong>
+          <br />
+          <span style="color: #aaa">6.1 Otrovi; 6.2 Infektivne materije.</span>
+        </li>
+        <li
+          style="
+            margin-bottom: 12px;
+            background: #222;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border-left: 6px solid #ff80ab;
+          "
+        >
+          <strong>🟣 Klasa 7 - Radioaktivne materije</strong>
+          <br />
+          <span style="color: #aaa">
+            Kategorije I, II, III prema nivou zračenja.
+          </span>
+        </li>
+        <li
+          style="
+            margin-bottom: 12px;
+            background: #222;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border-left: 6px solid #ce93d8;
+          "
+        >
+          <strong>🟣 Klasa 8 - Nagrizajuće (korozivne) materije</strong>
+          <br />
+          <span style="color: #aaa">
+            Kiseline, baze, halogeni. Oštećuju tkivo i materijale.
+          </span>
+        </li>
+        <li
+          style="
+            margin-bottom: 12px;
+            background: #222;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border-left: 6px solid #bdbdbd;
+          "
+        >
+          <strong>⚪ Klasa 9 - Razne opasne materije i predmeti</strong>
+          <br />
+          <span style="color: #aaa">
+            Azbest, suvi led, litijumske baterije, materije koje zagađuju
+            vodu...
+          </span>
+        </li>
+      </ol>
+
+      <div class="highlight-box">
+        <strong>💡 Važno:</strong>
+        Mnoge materije imaju više opasnosti i svrstavaju se u više klasa. Tada
+        se primenjuju pravila za sve te klase. (npr. amonijak je klasa 2 i 6.1)
+        ⚠️
+      </div>
+
+      <hr />
+
+      <!-- OZNAČAVANJE (NALEPNICE, KEMLER, UN) -->
+      <h2>🏷️ OZNAČAVANJE VOZILA I AMBALAŽE</h2>
+
+      <div class="two-columns">
+        <div
+          style="
+            background-color: #252525;
+            padding: 12px 15px;
+            border-radius: 8px;
+          "
+        >
+          <h3 style="margin-top: 0">🟧 NARANDŽASTA TABLA</h3>
+          <ul>
+            <li>
+              <strong>Gornji broj (Kemler kod)</strong>
+              →
+              <span style="color: #ffab40">Vrsta opasnosti</span>
+              (npr. 33 = zapaljiva tečnost).
+              <br />
+              <span class="badge">X</span>
+              ispred znači
+              <strong>zabrana vode</strong>
+              .
+            </li>
+            <li>
+              <strong>Donji broj (UN broj)</strong>
+              →
+              <span style="color: #ffab40">Identifikacija supstance</span>
+              (npr. 1203 = benzin).
+            </li>
+          </ul>
+        </div>
+        <div
+          style="
+            background-color: #252525;
+            padding: 12px 15px;
+            border-radius: 8px;
+          "
+        >
+          <h3 style="margin-top: 0">⚠️ NALEPNICE OPASNOSTI</h3>
+          <ul>
+            <li>
+              <strong>GHS 02</strong>
+              - Zapaljivo
+            </li>
+            <li>
+              <strong>GHS 06</strong>
+              - Otrovno
+            </li>
+            <li>
+              <strong>GHS 08</strong>
+              - Opasno po zdravlje
+            </li>
+            <li>
+              <strong>GHS 09</strong>
+              - Opasno po životnu sredinu
+            </li>
+            <li>
+              Veličina:
+              <strong>25x25 cm</strong>
+              (ili 30x30 cm)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="definition">
+        <strong>🔎 Primer:</strong>
+        <br />
+        🟧
+        <strong>33 / 1203</strong>
+        = Kemler kod 33 (zapaljiva tečnost) + UN 1203 =
+        <strong>BENZIN</strong>
+        ⛽
+      </div>
+
+      <hr />
+
+      <!-- OSNOVNI POSTUPCI I ZABRANE -->
+      <h2>🛑 OSNOVNA PRAVILA POSTUPANJA</h2>
+
+      <div class="two-columns">
+        <div>
+          <h3>
+            📄
+            <u>Dokumenti u vozilu</u>
+          </h3>
+          <ul>
+            <li>✔️ Sertifikat za vozača</li>
+            <li>✔️ Sertifikat za vozilo</li>
+            <li>✔️ Isprava o prevozu</li>
+            <li>✔️ Uputstvo o merama bezbednosti</li>
+          </ul>
+        </div>
+        <div>
+          <h3>
+            🚫
+            <u>Zabrane pri utovaru/istovaru</u>
+          </h3>
+          <ul>
+            <li>⛔ Pušenje i otvoren plamen</li>
+            <li>⛔ Rad sa alatom koji varniči</li>
+            <li>⛔ Pristup licima koja ne učestvuju</li>
+            <li>⛔ Mešovito pakovanje kiselina i baza</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <strong>🧤 Lična zaštitna oprema:</strong>
+        Rukavice, zaštitno odelo, čizme, maska za disanje, sredstva za
+        ispiranje. 🥽
+      </div>
+
+      <hr />
+
+      <!-- AKCIDENT / POSTUPAK -->
+      <h2>🚨 POSTUPAK KOD AKCIDENTA</h2>
+      <ol>
+        <li>
+          <strong>📢 Alarmiranje:</strong>
+          Najbliža vatrogasno-spasilačka jedinica.
+        </li>
+        <li>
+          <strong>🔍 Prikupljanje informacija:</strong>
+          Vrsta opasne materije, količina, rizici.
+        </li>
+        <li>
+          <strong>⬅️ Pristup uz vetar:</strong>
+          Uvek sa
+          <strong>uzvetrene strane</strong>
+          (u pravcu duvanja vetra).
+        </li>
+        <li>
+          <strong>🚧 Obezbeđenje mesta:</strong>
+          Sprečavanje širenja, postavljanje konusa, evakuacija.
+        </li>
+        <li>
+          <strong>👨‍🚒 Zaštita ljudi:</strong>
+          Određivanje bezbednog rastojanja i evakuacija.
+        </li>
+      </ol>
+
+      <hr />
+
+      <!-- TABELA (SKRAĆENO) -->
+      <h2>📊 PRIMERI OZNAKA (UN & KEMLER)</h2>
+      <table
+        style="
+          width: 100%;
+          border-collapse: collapse;
+          background-color: #1a1a1a;
+          border-radius: 8px;
+          overflow: hidden;
+        "
+      >
+        <thead style="background-color: #333">
+          <tr>
+            <th style="padding: 10px; text-align: left">UN broj</th>
+            <th style="padding: 10px; text-align: left">Materija</th>
+            <th style="padding: 10px; text-align: left">Kemler</th>
+            <th style="padding: 10px; text-align: left">Sredstvo za gašenje</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom: 1px solid #444">
+            <td style="padding: 8px">1203</td>
+            <td style="padding: 8px">Benzin ⛽</td>
+            <td style="padding: 8px">33</td>
+            <td style="padding: 8px">Raspršena voda, pena, prah</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #444">
+            <td style="padding: 8px">1090</td>
+            <td style="padding: 8px">Aceton 🧪</td>
+            <td style="padding: 8px">33</td>
+            <td style="padding: 8px">Voda, prah, CO₂</td>
+          </tr>
+          <tr style="border-bottom: 1px solid #444">
+            <td style="padding: 8px">1978</td>
+            <td style="padding: 8px">Propan 🏠</td>
+            <td style="padding: 8px">23</td>
+            <td style="padding: 8px">Prah, CO₂ (ne gasiti dok curi)</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px">1830</td>
+            <td style="padding: 8px">Sumporna kiselina ☣️</td>
+            <td style="padding: 8px">88</td>
+            <td style="padding: 8px">Ne gori, izaziva opekotine</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr />
+
+      <!-- PRVA POMOĆ -->
+      <h2>🆘 PRVA POMOĆ KOD AKCIDENTA</h2>
+      <ul>
+        <li>👃 Izneti na svež vazduh.</li>
+        <li>📞 Pozvati hitnu pomoć.</li>
+        <li>
+          💧 Ako je u pitanju kontakt sa kožom/okom, ispirati
+          <strong>najmanje 20 minuta</strong>
+          mlazom vode.
+        </li>
+        <li>👕 Skinuti i izolovati kontaminiranu odeću i obuću.</li>
+        <li>
+          ⚠️
+          <strong>Ne davati ništa na usta</strong>
+          ako je lice onesvešćeno.
+        </li>
+        <li>📋 Obavestiti medicinsko osoblje o vrsti materije.</li>
+      </ul>
+
+      <hr />
+
+      <div
+        style="
+          text-align: center;
+          margin-top: 30px;
+          color: #777;
+          font-size: 0.9rem;
+        "
+      >
+        <p>
+          💡
+          <strong>Ključ za uspeh:</strong>
+          Zapamti 9 klasa, razliku između Kemler i UN broja, i osnovne mere
+          zaštite.
+          <br />
+          Srećno na ispitu! 🍀
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
