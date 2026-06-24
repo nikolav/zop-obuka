@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔥 SAŽETI PREGLED: SREDSTVA ZA GAŠENJE POŽARA</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #0b0e14;
+        color: #e8edf5;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        max-width: 1100px;
+        width: 100%;
+        background: #141a24;
+        padding: 2rem 2.2rem;
+        border-radius: 32px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+        border: 1px solid #2a3344;
+      }
+
+      h1 {
+        font-size: 2.4rem;
+        text-align: center;
+        margin-bottom: 0.2rem;
+        letter-spacing: 1px;
+        background: linear-gradient(135deg, #f6b26b, #f9cb8a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .subhead {
+        text-align: center;
+        color: #9aaec9;
+        border-bottom: 1px solid #2a3344;
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+        font-size: 1.05rem;
+      }
+
+      .subhead span {
+        background: #1f2a3a;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-weight: 600;
+        color: #d6e2f5;
+      }
+
+      h2 {
+        font-size: 1.6rem;
+        margin-top: 2.2rem;
+        margin-bottom: 1rem;
+        color: #f0c99a;
+        border-left: 5px solid #f6b26b;
+        padding-left: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        margin-top: 1.6rem;
+        margin-bottom: 0.6rem;
+        color: #cbd9f0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+        margin: 0.8rem 0 1.2rem 0;
+      }
+
+      .card {
+        background: #1c2533;
+        padding: 1rem 1.4rem;
+        border-radius: 18px;
+        border-left: 6px solid #f6b26b;
+        box-shadow: inset 0 0 0 1px #2a3344;
+      }
+
+      .card-blue {
+        border-left-color: #6a9fdf;
+      }
+
+      .card-green {
+        border-left-color: #6fcf97;
+      }
+
+      .card-red {
+        border-left-color: #e67e7e;
+      }
+
+      .card-purple {
+        border-left-color: #b38bdd;
+      }
+
+      ul,
+      .ul-style {
+        list-style: none;
+        padding-left: 0.2rem;
+      }
+
+      ul li,
+      .ul-style li {
+        padding: 0.3rem 0 0.3rem 1.8rem;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23f6b26b" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>')
+          left center no-repeat;
+        background-size: 1.1rem;
+        margin-bottom: 0.1rem;
+      }
+
+      .emoji-big {
+        font-size: 1.5rem;
+        margin-right: 6px;
+      }
+
+      .badge {
+        display: inline-block;
+        background: #2a3a50;
+        padding: 0.1rem 0.8rem;
+        border-radius: 30px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #bdd1ea;
+        letter-spacing: 0.3px;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        margin: 1rem 0 1.5rem 0;
+        border-radius: 16px;
+        border: 1px solid #2a3344;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #18202b;
+        font-size: 0.95rem;
+      }
+
+      th {
+        background: #232f40;
+        color: #f0dbb0;
+        font-weight: 600;
+        padding: 0.7rem 0.8rem;
+        text-align: left;
+        border-bottom: 2px solid #3b485e;
+      }
+
+      td {
+        padding: 0.6rem 0.8rem;
+        border-bottom: 1px solid #293447;
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      .highlight {
+        background: #1f2a3a;
+        border-radius: 30px;
+        padding: 0.1rem 0.7rem;
+        color: #f0c99a;
+        font-weight: 500;
+      }
+
+      .danger {
+        color: #f7a1a1;
+      }
+
+      .success {
+        color: #8dd9b2;
+      }
+
+      .info {
+        color: #8bb9f0;
+      }
+
+      .pill {
+        display: inline-block;
+        background: #28354a;
+        padding: 0.1rem 0.8rem;
+        border-radius: 30px;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #2a3344;
+        margin: 1.8rem 0;
+      }
+
+      .footer-note {
+        text-align: center;
+        margin-top: 2.5rem;
+        color: #7a8aa3;
+        font-size: 0.9rem;
+        border-top: 1px solid #222d3d;
+        padding-top: 1.8rem;
+      }
+
+      @media (max-width: 750px) {
+        .container {
+          padding: 1.5rem 1rem;
+        }
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🧯 SREDSTVA ZA GAŠENJE POŽARA</h1>
+      <div class="subhead">
+        <span>📘 OPTIMIZOVAN PREGLED ZA BRZO PAMĆENJE</span>
+        &nbsp;|&nbsp; 🔥 12 ključnih celina
+      </div>
+
+      <!-- ============ 1. OSNOVE ============ -->
+      <h2>1️⃣ OSNOVE &amp; USLOVI ZA GORENJE</h2>
+      <div class="grid-2">
+        <div class="card card-blue">
+          <strong>📌 Šta su sredstva za gašenje?</strong>
+          <p style="margin-top: 6px">
+            Materije koje prekidaju sagorevanje uklanjanjem
+            <strong>bar jednog</strong>
+            od tri uslova.
+          </p>
+          <p style="margin-top: 8px">
+            <span class="badge">✅ USLOVI ZA KVALITET</span>
+          </p>
+          <ul>
+            <li>💪 Efikasnost</li>
+            <li>🧪 Postojanost (skladištenje)</li>
+            <li>☠️ Netoksičnost</li>
+            <li>🧹 Ne ostavlja štetu</li>
+            <li>💰 Pristupačna cena</li>
+            <li>⚡ Ne provodi struju (poželjno)</li>
+          </ul>
+        </div>
+        <div class="card card-red">
+          <strong>
+            🔥
+            <u>Trougao požara</u>
+            (3 uslova)
+          </strong>
+          <ul style="margin-top: 6px">
+            <li>
+              🧱
+              <strong>Goriva materija</strong>
+              (čvrsta, tečna, gas)
+            </li>
+            <li>
+              💨
+              <strong>Kiseonik</strong>
+              &gt;15% (normalno 21%)
+            </li>
+            <li>
+              🌡️
+              <strong>Toplota</strong>
+              (temp. paljenja)
+            </li>
+          </ul>
+          <p style="margin-top: 10px">
+            ➕
+            <strong>4. uslov:</strong>
+            lančana reakcija →
+            <em>tetraedar</em>
+          </p>
+          <p
+            style="
+              margin-top: 6px;
+              background: #1f2a3a;
+              padding: 0.3rem 0.8rem;
+              border-radius: 30px;
+            "
+          >
+            ⚠️ Ispod
+            <strong>15% O₂</strong>
+            gorenje prestaje (osim materija koje same sadrže kiseonik).
+          </p>
+        </div>
+      </div>
+
+      <!-- ============ 2. MEHANIZMI ============ -->
+      <h2>2️⃣ MEHANIZMI GAŠENJA (4 načina)</h2>
+      <div class="grid-2">
+        <div class="card card-green">
+          <strong>❄️ HLAĐENJE</strong>
+          <ul>
+            <li>Voda (najveći specifični toplotni kapacitet)</li>
+            <li>➕ 1L vode → 1700L vodene pare</li>
+            <li>Primarno: klasa A (čvrste materije)</li>
+          </ul>
+        </div>
+        <div class="card card-blue">
+          <strong>😤 GUŠENJE (izolacija O₂)</strong>
+          <ul>
+            <li>CO₂, pena, inertni gasovi, pesak</li>
+            <li>Smanjenje O₂ ispod 15%</li>
+            <li>➕ razblaživanje goriva (rastvorljive tečnosti)</li>
+          </ul>
+        </div>
+        <div class="card card-purple">
+          <strong>⚗️ ANTIKATALITIČKI</strong>
+          <ul>
+            <li>Prekid lančane reakcije</li>
+            <li>🔹 homogena inhibicija (vezivanje radikala)</li>
+            <li>🔸 heterogena inhibicija (zrna praha)</li>
+            <li>Primeri: prah, haloni, aerosoli</li>
+          </ul>
+        </div>
+        <div class="card card-red">
+          <strong>🚫 ODUZIMANJE GORIVA</strong>
+          <ul>
+            <li>Zatvaranje ventila (gasovi/tečnosti)</li>
+            <li>Sprečavanje dotoka zapaljive materije</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ============ 3. KLASE POŽARA ============ -->
+      <h2>3️⃣ KLASE POŽARA 🏷️</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Klasa</th>
+              <th>Tip materijala</th>
+              <th>Sredstva</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>A</strong></td>
+              <td>čvrste (drvo, papir, ugalj)</td>
+              <td>💧 voda, pena, ABC prah</td>
+            </tr>
+            <tr>
+              <td><strong>B</strong></td>
+              <td>zapaljive tečnosti</td>
+              <td>🧴 pena, CO₂, prah</td>
+            </tr>
+            <tr>
+              <td><strong>C</strong></td>
+              <td>zapaljivi gasovi</td>
+              <td>🧯 prah, CO₂</td>
+            </tr>
+            <tr>
+              <td><strong>D</strong></td>
+              <td>zapaljivi metali</td>
+              <td>🧂 specijalni prah, pesak</td>
+            </tr>
+            <tr>
+              <td><strong>E</strong></td>
+              <td>električni uređaji pod naponom</td>
+              <td>⚡ CO₂, prah (do 1000V)</td>
+            </tr>
+            <tr>
+              <td><strong>F</strong></td>
+              <td>ulja i masti (kuhinje)</td>
+              <td>🧼 vlažna hemijska sredstva, Bioverzal QF</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ============ 4. VODA ============ -->
+      <h2>4️⃣ 💧 VODA</h2>
+      <div class="grid-2">
+        <div>
+          <div class="card card-blue">
+            <strong>📊 Fizičko-hemijske osobine</strong>
+            <ul>
+              <li>
+                Specifična toplota:
+                <strong>4,187 kJ/kg°C</strong>
+              </li>
+              <li>
+                Toplota isparavanja:
+                <strong>2,257 MJ/kg</strong>
+              </li>
+              <li>1L vode → 1700L pare (gušenje)</li>
+              <li>Najveća gustina na 4°C (1 kg/L)</li>
+            </ul>
+          </div>
+          <div class="card card-red" style="margin-top: 0.8rem">
+            <strong>⛔ NE GASITI VODOM</strong>
+            <ul>
+              <li>❌ električni uređaji pod naponom</li>
+              <li>❌ laki metali (Al, Mg, Zn) → eksplozija</li>
+              <li>
+                ❌ tečnosti sa T
+                <sub>ključ</sub>
+                &lt;80°C
+              </li>
+              <li>❌ ulja i masti (klasa F)</li>
+              <li>❌ materije koje burno reaguju (živi kreč)</li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="card card-green">
+            <strong>💦 Oblici mlaza</strong>
+            <ul>
+              <li>
+                🔵
+                <strong>Pun mlaz</strong>
+                – domet 15–20m, klasa A
+              </li>
+              <li>
+                🟢
+                <strong>Raspršeni</strong>
+                – veća površina
+              </li>
+              <li>
+                🟣
+                <strong>Vodena magla</strong>
+                – 125× efikasnija, sprečava flashover
+              </li>
+            </ul>
+          </div>
+          <div class="card card-purple" style="margin-top: 0.8rem">
+            <strong>🧪 Dodaci vodi</strong>
+            <ul>
+              <li>
+                🧴
+                <strong>Ovlaživači</strong>
+                (sapuni) – smanjuju površinski napon, bolje prodiranje
+              </li>
+              <li>
+                🧊
+                <strong>Antifrizi</strong>
+                (glikoli, CaCl₂) – do -30°C (max 44% glikola)
+              </li>
+              <li>
+                💨
+                <strong>Klizači</strong>
+                (polimeri) – smanjuju trenje, veći domet
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ 5. PRAH ============ -->
+      <h2>5️⃣ 🧂 PRAH ZA SUVO GAŠENJE</h2>
+      <div class="grid-2">
+        <div class="card card-green">
+          <strong>⚡ Način delovanja:</strong>
+          antikatalitički (prekida lančanu reakciju)
+          <ul style="margin-top: 6px">
+            <li>
+              <strong>BCE</strong>
+              – NaHCO₃, klase B, C, E (ograničeno)
+            </li>
+            <li>
+              <strong>ABCE</strong>
+              – amonijum-fosfat, univerzalni (A, B, C, E)
+            </li>
+            <li>
+              <strong>ABCD</strong>
+              – NaCl, boraks, grafit – za metale (klasa D)
+            </li>
+          </ul>
+        </div>
+        <div class="card card-blue">
+          <strong>📏 Granulacija &amp; fluidnost</strong>
+          <ul>
+            <li>0,02–0,2 mm; optimalno ~40 µm → 4× efikasniji</li>
+            <li>
+              🔹
+              <strong>Fluidnost</strong>
+              = sposobnost tečenja (dodaci Mg-karbonat, fosfati)
+            </li>
+            <li>
+              🔸
+              <strong>Hidrofobnost</strong>
+              – odbija vlagu (ne zgrudnjava se)
+            </li>
+            <li>🌡️ Stabilan od -20°C do +60°C; iznad +50°C – zgrudnjavanje</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card card-red" style="margin-top: 0.2rem">
+        <strong>⚠️ VAŽNO:</strong>
+        Prah na bazi NaHCO₃
+        <span class="danger">RAZARA PENU</span>
+        → ne koristiti zajedno! ✅ Prahovi sa silikonom su kompatibilni.
+      </div>
+
+      <!-- ============ 6. CO₂ ============ -->
+      <h2>6️⃣ 🧊 UGLJENDIOKSID (CO₂)</h2>
+      <div class="grid-2">
+        <div class="card card-blue">
+          <strong>📌 Osobine</strong>
+          <ul>
+            <li>
+              bezbojan, bez mirisa,
+              <strong>1,5× teži od vazduha</strong>
+              → pri podu
+            </li>
+            <li>trojna tačka: -56,7°C, 5,3 bara</li>
+            <li>1 kg CO₂ = 508 m³ gasa</li>
+          </ul>
+        </div>
+        <div class="card card-red">
+          <strong>⚠️ Opasnosti</strong>
+          <ul>
+            <li>3% – glavobolja, ubrzano disanje</li>
+            <li>4% – nesvestica</li>
+            <li>10–20% – smrt</li>
+            <li>
+              Zaštita:
+              <strong>izolacioni aparat</strong>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="card card-green">
+        <strong>✅ GAŠI:</strong>
+        klase B, C, E (do 10.000V), zatvoreni prostori, elektronika, arhive
+        <br />
+        <strong>❌ NE GAŠI:</strong>
+        klasu D (metali), žeravice, materije sa sopstvenim O₂
+      </div>
+
+      <!-- ============ 7. PENE ============ -->
+      <h2>7️⃣ 🧴 PENE</h2>
+      <div class="grid-2">
+        <div class="card card-green">
+          <strong>📊 Broj penušanja (ekspanzija)</strong>
+          <ul>
+            <li>
+              <strong>Teška</strong>
+              1–20 – klase A, B (rezervoari, nafta)
+            </li>
+            <li>
+              <strong>Srednja</strong>
+              21–200 – rezervoari, guma
+            </li>
+            <li>
+              <strong>Laka</strong>
+              201–1000 – zatvoreni prostori (podrumi, rudnici)
+            </li>
+          </ul>
+          <p style="margin-top: 6px">
+            📐
+            <em>BU = Vp / Vk</em>
+            (zapremina pene / zapremina koncentrata)
+          </p>
+        </div>
+        <div class="card card-purple">
+          <strong>🧪 Ekstrakti</strong>
+          <ul>
+            <li>
+              🥩
+              <strong>Proteinski</strong>
+              – termostabilniji, duži polurazpad (10–15 min)
+            </li>
+            <li>
+              🧪
+              <strong>Sintetički</strong>
+              – višenamenski (Sylvani, Light Water)
+            </li>
+          </ul>
+          <p style="margin-top: 8px">
+            <strong>Efekti:</strong>
+            razdvajanje, hlađenje, pokrivanje, izolacija
+          </p>
+        </div>
+      </div>
+      <div class="card card-red">
+        <strong>⛔ NE KORISTITI PENU:</strong>
+        električne instalacije, laki metali, materije koje reaguju sa vodom, na
+        gasovima.
+      </div>
+
+      <!-- ============ 8. HALONI ============ -->
+      <h2>8️⃣ 🚫 HALONI (zabranjeni)</h2>
+      <div class="grid-2">
+        <div class="card card-red">
+          <strong>⛔ ZABRANJENI od 1993.</strong>
+          <ul>
+            <li>Oštećuju ozonski omotač (vek 77 godina)</li>
+            <li>Halon 1211 (BCF) – tečan, 4–5% kritična konc.</li>
+            <li>Halon 1301 (BTM) – gasovit, 7–10% kritična</li>
+          </ul>
+        </div>
+        <div class="card card-purple">
+          <strong>⚗️ Delovanje:</strong>
+          antikatalitički (homogena inhibicija)
+          <br />
+          <strong>✅ Gašili:</strong>
+          klase A, B, C, E (do 100.000V) – elektronika, umetnine, arhive.
+          <br />
+          <span class="danger">☠️ Toksični – boravak max 1 min.</span>
+        </div>
+      </div>
+
+      <!-- ============ 9. INERTNI GASOVI ============ -->
+      <h2>9️⃣ 🧪 INERTNI GASOVI &amp; INERGEN</h2>
+      <div class="grid-2">
+        <div class="card card-blue">
+          <strong>📌 Vrste</strong>
+          <ul>
+            <li>
+              <strong>IG-01</strong>
+              – Argon 99,9%
+            </li>
+            <li>
+              <strong>IG-55</strong>
+              (ArgoNit) – 50% Ar + 50% N₂
+            </li>
+            <li>
+              <strong>IG-541</strong>
+              (Inergen) –
+              <span class="highlight">52% N₂ + 40% Ar + 8% CO₂</span>
+            </li>
+          </ul>
+        </div>
+        <div class="card card-green">
+          <strong>✅ Inergen – prednosti</strong>
+          <ul>
+            <li>Neotrovan, ne oštećuje ozon</li>
+            <li>
+              Čovek može boraviti
+              <strong>do 7 min</strong>
+              (CO₂ stimuliše disanje)
+            </li>
+            <li>Ističe se za 60 sekundi, boce 150–160 bara</li>
+            <li>Klase B, C, E (računari, telekom, arhive)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ============ 10. AEROSOLI ============ -->
+      <h2>🔟 ☁️ AEROSOLI</h2>
+      <div class="card card-purple">
+        <strong>⚡ Delovanje:</strong>
+        antikatalitički (homogena + heterogena inhibicija)
+        <br />
+        <strong>✅ Klasе:</strong>
+        A, B, C – zatvoreni prostori (računski centri, generatori)
+        <br />
+        <strong>⛔ Zabrana:</strong>
+        eksplozivne atmosfere, objekti sa slabom evakuacijom.
+        <br />
+        <span class="badge">🛡️ Zaštita:</span>
+        izolacioni aparat na vazduh.
+      </div>
+
+      <!-- ============ 11. KLASA F ============ -->
+      <h2>1️⃣1️⃣ 🍳 KLASA F (ulja i masti)</h2>
+      <div class="card card-red">
+        <strong>⛔ Zašto NE vodom?</strong>
+        Voda ključa na 100°C → trenutno isparavanje →
+        <span class="danger">eksplozija</span>
+        i raspršivanje vrelog ulja.
+      </div>
+      <div class="card card-green">
+        <strong>✅ Rešenje – SAPONIFIKACIJA</strong>
+        <ul>
+          <li>
+            Alkalne mešavine (kalijum-acetat, citrat, karbonat) + masne kiseline
+            =
+            <strong>sapunasta pena</strong>
+          </li>
+          <li>Pena odvaja ulje od kiseonika</li>
+          <li>
+            <strong>Primeri:</strong>
+            ANSULEX, FRYACCO, BIOVERZAL QF
+          </li>
+        </ul>
+      </div>
+
+      <!-- ============ 12. NOVEC 1230 ============ -->
+      <h2>1️⃣2️⃣ 💧 NOVEC 1230 („suva voda")</h2>
+      <div class="card card-blue">
+        <strong>📌 Karakteristike</strong>
+        <ul>
+          <li>Fluoroketon – ne provodi struju, slabo kvasi</li>
+          <li>
+            Vek u atmosferi:
+            <strong>5 dana</strong>
+            (ODP=0)
+          </li>
+          <li>Temperatura ključanja: 49,2°C</li>
+          <li>Min. koncentracija: 4–6%</li>
+          <li>Na visokim T stvara toksične produkte (fluorovodonik, CO)</li>
+        </ul>
+      </div>
+      <div class="card card-green">
+        <strong>✅ Primena:</strong>
+        računarski centri, brodovi, muzeji, biblioteke, arhive.
+      </div>
+
+      <!-- ============ 13. NEPOTPUNO SAGOREVANJE ============ -->
+      <h2>⚠️ NEPOTPUNO SAGOREVANJE – CO</h2>
+      <div class="card card-red">
+        <strong>☠️ UGLJEN-MONOKSID (CO)</strong>
+        <ul>
+          <li>bez boje, mirisa, ukusa; 0,97× lakši od vazduha</li>
+          <li>
+            vezuje se za hemoglobin
+            <strong>270× brže</strong>
+            od O₂
+          </li>
+          <li>smrtna doza: 1000–2000 ppm (0,1–0,2%) za 30 min</li>
+          <li>eksplozivna granica: 12,5–74%</li>
+        </ul>
+        <p style="margin-top: 6px">🛡️ Zaštita: izolacioni aparat, maska.</p>
+      </div>
+
+      <!-- ============ 14. PRIRUČNA ============ -->
+      <h2>🧰 PRIRUČNA SREDSTVA</h2>
+      <div class="card card-blue">
+        <ul>
+          <li>
+            🧂
+            <strong>Pesak</strong>
+            – klase B i D (metali), gušenje
+          </li>
+          <li>
+            🌍
+            <strong>Zemlja</strong>
+            – klase B i D
+          </li>
+          <li>
+            🔥
+            <strong>Vatrootporne deke</strong>
+            – početni požari, gušenje
+          </li>
+        </ul>
+        <p style="margin-top: 6px">
+          ✅ Koriste se za
+          <strong>početno gašenje</strong>
+          , deponije, nisko rastinje.
+        </p>
+      </div>
+
+      <!-- ============ 15. STANDARDI ============ -->
+      <h2>📜 STANDARDI &amp; CERTIFIKATI</h2>
+      <div class="grid-2">
+        <div class="card card-purple">
+          <ul>
+            <li>
+              <strong>SRPS ISO 7202:1994</strong>
+              – prah
+            </li>
+            <li>
+              <strong>DIN 14272 / EN 1568</strong>
+              – pena
+            </li>
+            <li>
+              <strong>NFPA 2001</strong>
+              – gasni sistemi
+            </li>
+            <li>
+              <strong>SRPS EN 15004-1:2009</strong>
+              – gasni sistemi
+            </li>
+            <li>
+              <strong>SRPS EN 2:2011</strong>
+              – klasifikacija (uvodi klasu F)
+            </li>
+          </ul>
+        </div>
+        <div class="card card-green">
+          <strong>✅ Testovi za penu:</strong>
+          OF 555 C, NFPA 412, SRPS EN 14493
+        </div>
+      </div>
+
+      <hr />
+      <div class="footer-note">
+        📘 Na osnovu skripte „Sredstva za gašenje požara“ – Milan Jovanović,
+        2022.
+        <br />
+        ⭐ Optimizovano za brzo ponavljanje i polaganje ispita.
+      </div>
+    </div>
+  </body>
+</html>

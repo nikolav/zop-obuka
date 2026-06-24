@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔥 Preventivna zaštita od požara – Sažet pregled</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #0f1117;
+        font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+        display: flex;
+        justify-content: center;
+        padding: 2rem 1rem;
+        color: #e8edf5;
+      }
+
+      .card {
+        max-width: 1100px;
+        width: 100%;
+        background: #1a1d27;
+        border-radius: 36px;
+        padding: 2rem 2.2rem;
+        box-shadow:
+          0 20px 40px rgba(0, 0, 0, 0.7),
+          0 0 0 1px #2f3545;
+        transition: all 0.2s;
+      }
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        background: linear-gradient(135deg, #fbbf24, #f59e0b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 0.3rem;
+      }
+
+      .subhead {
+        color: #94a3b8;
+        border-left: 4px solid #f59e0b;
+        padding-left: 1rem;
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .subhead span {
+        background: #2a2f3f;
+        padding: 0.3rem 1rem;
+        border-radius: 40px;
+        font-size: 0.8rem;
+        color: #cbd5e1;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+
+      .section {
+        background: #222733;
+        border-radius: 20px;
+        padding: 1.3rem 1.5rem;
+        box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.03);
+        border: 1px solid #2f3548;
+        transition: 0.15s;
+        break-inside: avoid;
+      }
+
+      .section:hover {
+        border-color: #f59e0b55;
+      }
+
+      .section h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #facc15;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border-bottom: 1px dashed #3b4257;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.9rem;
+        letter-spacing: -0.2px;
+      }
+
+      .section ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .section li {
+        padding: 0.35rem 0 0.35rem 1.5rem;
+        position: relative;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        border-bottom: 1px solid #2a3042;
+        color: #dce2ee;
+      }
+
+      .section li:last-child {
+        border-bottom: none;
+      }
+
+      .section li::before {
+        content: "▹";
+        position: absolute;
+        left: 0;
+        color: #facc15;
+        font-weight: 700;
+      }
+
+      .badge {
+        display: inline-block;
+        background: #2d3348;
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 0.1rem 0.6rem;
+        border-radius: 40px;
+        color: #facc15;
+        margin-right: 4px;
+        letter-spacing: 0.3px;
+      }
+
+      .emoji-big {
+        font-size: 1.2rem;
+        margin-right: 4px;
+      }
+
+      .highlight {
+        background: #facc1522;
+        padding: 0.1rem 0.4rem;
+        border-radius: 8px;
+        font-weight: 500;
+        color: #fde68a;
+      }
+
+      .row-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      .pill {
+        background: #1e2433;
+        border-radius: 40px;
+        padding: 0.3rem 1rem;
+        font-size: 0.75rem;
+        color: #94a3b8;
+        border: 1px solid #323a4e;
+      }
+
+      hr {
+        border: none;
+        border-top: 2px dotted #2d3447;
+        margin: 1.2rem 0;
+      }
+
+      .footer-note {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+        color: #6b7a93;
+        margin-top: 1.8rem;
+        border-top: 1px solid #282f41;
+        padding-top: 1.2rem;
+      }
+
+      @media (max-width: 750px) {
+        .card {
+          padding: 1.5rem;
+        }
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+        .row-3 {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>🧯 Preventivna zaštita od požara</h1>
+      <div class="subhead">
+        <span>📘 Skripta – DvD Zvezdara · 12/2022</span>
+        <span>✅ Ključne tačke za polaganje</span>
+      </div>
+
+      <!-- 1. red – Klasifikacije + mere -->
+      <div class="grid-2">
+        <div class="section">
+          <h2>🏢 Klasifikacija objekata</h2>
+          <ul>
+            <li>
+              <span class="badge">I–III</span>
+              <strong>Kategorije ugroženosti</strong>
+              (visok/povećan/izvestan rizik) – određuje
+              <strong>MUP</strong>
+              .
+            </li>
+            <li>
+              <span class="badge">K₁–K₅</span>
+              <strong>Požarne kategorije</strong>
+              prema tački paljenja i DGE (donja granica eksplozivnosti).
+            </li>
+            <li>
+              📌 K₃ i K₄ uključuju
+              <strong>javne objekte</strong>
+              prema broju osoba (&gt;500 / do 500).
+            </li>
+            <li>
+              🧱
+              <strong>Negoriv materijal</strong>
+              : ne povećava T peći/uzorka ≥50°C, nema plamen &gt;10s.
+            </li>
+            <li>
+              📊 Klase materijala:
+              <strong>A1</strong>
+              (ne doprinosi požaru) do
+              <strong>F</strong>
+              (neklasifikovani).
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>🧱 Požarni sektori &amp; prepreke</h2>
+          <ul>
+            <li>
+              🔹
+              <strong>Sektor</strong>
+              – prostor ograđen vatrootpornim preprekama (zidovi, podovi,
+              tavanice).
+            </li>
+            <li>
+              🔸
+              <strong>Segment</strong>
+              – građevinska celina (npr. lamela),
+              <span class="highlight">≥2 sektora</span>
+              .
+            </li>
+            <li>
+              📐 Veličina: stambeni/poslovni
+              <strong>500–1500 m²</strong>
+              , skladišta do
+              <strong>4500 m²</strong>
+              .
+            </li>
+            <li>
+              🧱
+              <strong>PP zidovi</strong>
+              : od negorivog materijala, min
+              <strong>1h</strong>
+              otpornosti, od temelja do 0,4–0,7m iznad krova.
+            </li>
+            <li>
+              🚪
+              <strong>PP vrata</strong>
+              : otvor ≤25% površine zida, metalna sa termoizolacijom,
+              <span class="highlight">kontrola na 2 meseca</span>
+              .
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 2. red – evakuacija, hidranti, dojava -->
+      <div class="grid-2">
+        <div class="section">
+          <h2>🚨 Evakuacija &amp; osvetljenje</h2>
+          <ul>
+            <li>
+              ⏱️
+              <strong>Faze evakuacije</strong>
+              : I (30s) → II (1min) → III (6–10min) → IV (napolje).
+            </li>
+            <li>
+              🚪
+              <strong>Stepeništa</strong>
+              : spoljašnje širina ≥1,25m, unutrašnje ≥0,6m/100 ljudi, otpornost
+              ≥1,5h.
+            </li>
+            <li>
+              🛗
+              <strong>Evakuacioni lift</strong>
+              : vrata 120min, šaht 90min, rezerva 120min, zaštita od dima
+              (20Pa).
+            </li>
+            <li>
+              💡
+              <strong>Sigurnosno osvetljenje</strong>
+              : pomoćno + panično,
+              <span class="highlight">min 50mm</span>
+              od drugih instalacija.
+            </li>
+            <li>
+              🔋 Napajanje: akumulatori, dizel agregati ili nezavisni sistem.
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>💧 Hidrantska mreža &amp; pristup</h2>
+          <ul>
+            <li>
+              🚒
+              <strong>Pristupni putevi</strong>
+              : širina 3,5m (jednosmerno) / 6m (dvosmerno), nagib &lt;12%,
+              <strong>zabranjeno parkiranje</strong>
+              .
+            </li>
+            <li>
+              🔘
+              <strong>Spoljašnji hidranti</strong>
+              : razmak ≤80m (industrija) / ≤150m (stambeno), min 5m od zida,
+              <strong>pritisak ≥2,5 bara</strong>
+              .
+            </li>
+            <li>
+              🧯
+              <strong>Unutrašnji (zidni)</strong>
+              : na 1,5m, oznaka „H“, protok ≥2,5 bara na najvišem spratu.
+            </li>
+            <li>
+              📅
+              <strong>Kontrola</strong>
+              : mreža 1x godišnje, creva (7 bara) 1x godišnje, suva mreža (1,5
+              bar) svake 2 godine.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3. red – zavarivanje + opterećenje + gromobran -->
+      <div class="row-3">
+        <div class="section">
+          <h2>⚡ Zavarivanje</h2>
+          <ul>
+            <li>
+              📄
+              <strong>Privremena mesta</strong>
+              – obavezno
+              <span class="highlight">odobrenje</span>
+              (3 primerka).
+            </li>
+            <li>
+              🧯
+              <strong>Boce</strong>
+              : max 2 (radna + rezervna), 5m od grejača, 10m od plamena, T≤35°C.
+            </li>
+            <li>
+              🛡️
+              <strong>Protivpožarna straža</strong>
+              – najmanje
+              <strong>1 sat</strong>
+              nakon zavarivanja.
+            </li>
+            <li>
+              🚫 Zabranjeno: uz sprinklere, u eksplozivnoj atmosferi, blizu
+              skladišta zapaljivih materija.
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>🔥 Požarno opterećenje</h2>
+          <ul>
+            <li>
+              📊
+              <strong>Opterećenje</strong>
+              = toplotna vrednost materijala po m² (MJ/m²).
+            </li>
+            <li>
+              🟢
+              <strong>Nisko</strong>
+              : do 1 GJ/m²
+            </li>
+            <li>
+              🟡
+              <strong>Srednje</strong>
+              : 1–2 GJ/m²
+            </li>
+            <li>
+              🔴
+              <strong>Visoko</strong>
+              : &gt;2 GJ/m² (posebno &gt;4 GJ/m²)
+            </li>
+            <li>🏗️ Stepeni vatrootpornosti: I (bez) → V (velika).</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>⛈️ Gromobran &amp; statika</h2>
+          <ul>
+            <li>
+              ⚡
+              <strong>Gromobran</strong>
+              : prihvatni sistem + spusni provodnici + uzemljenje.
+            </li>
+            <li>
+              📏 Razmak hvatljki/odvoda ≤20m (≤10m za eksplozivne objekte).
+            </li>
+            <li>🔌 Otpor uzemljenja ≤20Ω (≤10Ω za eksplozivne).</li>
+            <li>
+              🚫
+              <strong>Aluminijum</strong>
+              – ZABRANJEN za gromobransku instalaciju.
+            </li>
+            <li>
+              ⚡
+              <strong>Statički elektricitet</strong>
+              – najvažnija mera:
+              <span class="highlight">UZEMLJENJE</span>
+              .
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4. red – dojava, detekcija gasova, ventilacija -->
+      <div class="grid-2">
+        <div class="section">
+          <h2>📡 Dojava požara &amp; detekcija gasova</h2>
+          <ul>
+            <li>
+              🔍
+              <strong>Adresabilni</strong>
+              sistem – individualna adresa, dvosmerna komunikacija, kontinuirani
+              nadzor.
+            </li>
+            <li>
+              🌡️
+              <strong>Javljači</strong>
+              : termički, dimni (jonizujući/optički), gasni, plameni.
+            </li>
+            <li>
+              🔴🟡🟢 Boje na centrali: crveno = uzbuna, žuto/belo = kvar, zeleno
+              = uključeno.
+            </li>
+            <li>
+              ⚠️
+              <strong>Detekcija eksplozivnih gasova</strong>
+              : prag 1 (selektivno uzbunjivanje + ventilacija), prag 2 (opšte
+              uzbunjivanje + isključenje dovoda).
+            </li>
+            <li>🧪 Sonde: difuzione (mere) i usisne (uzorkuju).</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>🌬️ Ventilacija &amp; odvođenje dima</h2>
+          <ul>
+            <li>
+              💨
+              <strong>Eksplozivna atmosfera</strong>
+              : koncentracija &lt;10% DGE – obavezna
+              <strong>kontrolisana ventilacija</strong>
+              .
+            </li>
+            <li>
+              🔄
+              <strong>Kontrolisana</strong>
+              (sa merenjem protoka) je pouzdanija od nadgledane (samo
+              kontaktorske kontrole).
+            </li>
+            <li>
+              🔥
+              <strong>Odvođenje dima</strong>
+              : ventilatori rade
+              <strong>30 min na 300°C</strong>
+              , 2 nezavisna izvora napajanja.
+            </li>
+            <li>
+              🧷
+              <strong>Protivpožarne klapne</strong>
+              : vatrootpornost ≥90 min, provodljivost ≤10 m³/h (zatvoreno).
+            </li>
+            <li>
+              📐 Stepenišni otvori za provetravanje: min 5% površine (ili ≥0,5
+              m²).
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 5. red – elektroinstalacije, kablovi, rezervoari -->
+      <div class="row-3">
+        <div class="section">
+          <h2>🔌 Elektroinstalacije</h2>
+          <ul>
+            <li>
+              📋
+              <strong>Ispitivanja</strong>
+              pre upotrebe: neprekidnost zaštite, izolacija, automatsko
+              isključenje, izjednačenje potencijala…
+            </li>
+            <li>
+              🧵
+              <strong>Halogen-free kablovi</strong>
+              : bez otrovnih gasova, ograničavaju širenje požara, manje dima.
+            </li>
+            <li>
+              🔋 Sigurnosni sistemi se napajaju iz akumulatora, dizel agregata
+              ili nezavisnog izvora.
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>🛢️ Rezervoari &amp; opasni objekti</h2>
+          <ul>
+            <li>
+              🧯
+              <strong>Nadzemni rezervoari &gt;300m³</strong>
+              : obavezan sistem za gašenje (pena) i hlađenje plašta (vodena
+              magla).
+            </li>
+            <li>
+              🚰
+              <strong>Najmanje 2 hidranta</strong>
+              na rastojanju 25–50m.
+            </li>
+            <li>
+              💨
+              <strong>Odušci</strong>
+              : normalni (pritisak) i sigurnosni (sprečava eksploziju).
+            </li>
+            <li>
+              🔧 Manometri – kontrola
+              <strong>1x godišnje</strong>
+              , crvena oznaka max pritiska.
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>🧯 Ostale ključne mere</h2>
+          <ul>
+            <li>
+              🪵
+              <strong>Drvo</strong>
+              – štiti se malterom (najbolje), limom (najlošije) ili
+              impregnacijom.
+            </li>
+            <li>
+              🧱
+              <strong>Čelik</strong>
+              – gubi nosivost na 400–600°C, oblaže se betonom, opekom ili
+              gipsanim malterom.
+            </li>
+            <li>
+              🧹
+              <strong>Statički elektricitet</strong>
+              – eliminiše se uzemljenjem, vlaženjem, antistatičkim podovima i
+              jonizatorima.
+            </li>
+            <li>
+              📅
+              <strong>Redovne kontrole</strong>
+              : PP vrata (2 meseca), hidranti (1 god.), creva (1 god.), suva
+              mreža (2 god.).
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- donji deo – sažeti rokovi + napomena -->
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem 2rem;
+          justify-content: center;
+          background: #1b212e;
+          border-radius: 60px;
+          padding: 0.8rem 1.5rem;
+          margin-top: 0.2rem;
+        "
+      >
+        <span>
+          📅 PP vrata –
+          <strong>2 meseca</strong>
+        </span>
+        <span>
+          💧 Hidranti/creva –
+          <strong>1 godišnje</strong>
+        </span>
+        <span>
+          🧯 Suva mreža –
+          <strong>2 godine</strong>
+        </span>
+        <span>
+          ⏱️ Manometri –
+          <strong>1 godišnje</strong>
+        </span>
+      </div>
+
+      <div class="footer-note">
+        <span>📘 Skripta – DvD Zvezdara, decembar 2022.</span>
+        <span>
+          🔥
+          <strong>Prolazna ocena</strong>
+          – obuhvaćene sve ključne teme
+        </span>
+        <span>✅ CE &amp; SRPS usaglašenost</span>
+      </div>
+    </div>
+  </body>
+</html>

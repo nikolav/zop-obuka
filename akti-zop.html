@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📘 Opšti akti ZOP – pregled za stručni ispit</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #0d1117;
+        color: #e6edf3;
+        font-family:
+          "Segoe UI",
+          Roboto,
+          system-ui,
+          -apple-system,
+          sans-serif;
+        line-height: 1.5;
+        padding: 24px 16px;
+        display: flex;
+        justify-content: center;
+      }
+      .container {
+        max-width: 1000px;
+        width: 100%;
+        background: #161b22;
+        border-radius: 28px;
+        padding: 28px 24px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+        border: 1px solid #30363d;
+      }
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-bottom: 2px solid #21262d;
+        padding-bottom: 14px;
+        margin-bottom: 24px;
+      }
+      h1 small {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #8b949e;
+        margin-left: auto;
+      }
+      h2 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 28px 0 12px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: #21262d;
+        padding: 8px 16px;
+        border-radius: 40px;
+        border-left: 5px solid #f0883e;
+      }
+      .card-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .card {
+        background: #0d1117;
+        border: 1px solid #30363d;
+        border-radius: 18px;
+        padding: 18px 20px;
+        transition: 0.15s ease;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      }
+      .card:hover {
+        border-color: #58a6ff;
+        background: #12181f;
+      }
+      .card-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+      }
+      .card-header span {
+        background: #21262d;
+        padding: 2px 12px;
+        border-radius: 30px;
+        font-size: 0.8rem;
+        color: #f0e6d0;
+        margin-left: auto;
+      }
+      .badge {
+        display: inline-block;
+        background: #2d3b4f;
+        padding: 2px 12px;
+        border-radius: 30px;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: #c9d1d9;
+        letter-spacing: 0.3px;
+      }
+      ul {
+        padding-left: 22px;
+        margin: 6px 0 4px 0;
+      }
+      li {
+        margin: 5px 0;
+        list-style-type: "▹ ";
+        padding-left: 6px;
+      }
+      li strong {
+        color: #f0c674;
+      }
+      .pill {
+        background: #1f2937;
+        border-radius: 40px;
+        padding: 0 14px;
+        font-size: 0.8rem;
+        display: inline-block;
+        color: #b1bac4;
+      }
+      .divider {
+        border-top: 1px dashed #2d3748;
+        margin: 18px 0 8px 0;
+      }
+      .flex-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        margin-top: 6px;
+      }
+      .footnote {
+        background: #1c2333;
+        border-radius: 30px;
+        padding: 16px 20px;
+        margin-top: 24px;
+        border-left: 4px solid #f0883e;
+        font-size: 0.95rem;
+      }
+      .emoji-big {
+        font-size: 1.6rem;
+        line-height: 1;
+      }
+      @media (max-width: 600px) {
+        .container {
+          padding: 16px;
+        }
+        h1 {
+          font-size: 1.6rem;
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        📋 Opšti akti u pravnom licu
+        <small>📘 ZOP – stručni ispit</small>
+      </h1>
+
+      <!-- ➡️ UVODNA NAPOMENA -->
+      <div
+        style="
+          background: #1c2333;
+          border-radius: 18px;
+          padding: 14px 20px;
+          margin-bottom: 20px;
+          border: 1px solid #30363d;
+        "
+      >
+        <p
+          style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap"
+        >
+          <span
+            style="background: #2d3b4f; padding: 4px 14px; border-radius: 40px"
+          >
+            ⚡ KLJUČNO
+          </span>
+          <span style="color: #b1bac4">
+            Obaveze zavise od
+            <strong style="color: #f0c674">kategorije ugroženosti</strong>
+            (I, II, III).
+          </span>
+          <span style="color: #8b949e; margin-left: auto">
+            🎯
+            <strong>prevencija</strong>
+            +
+            <strong>organizacija</strong>
+          </span>
+        </p>
+      </div>
+
+      <!-- 1️⃣ PLAN ZOP -->
+      <div class="card">
+        <div class="card-header">
+          <span class="emoji-big">📌</span>
+          Plan zaštite od požara (Plan ZOP)
+          <span>I + II kat. + AP + lokalna samouprava</span>
+        </div>
+        <ul>
+          <li>
+            <strong>Obavezni subjekti:</strong>
+            AP, jedinice lokalne samouprave, pravna lica I i II kategorije.
+          </li>
+          <li>
+            <strong>Sadržaj (6 osnovnih tačaka):</strong>
+            prikaz stanja, procena ugroženosti, organizacija ZOP, predlog mera,
+            finansijski proračun, grafički prilozi.
+          </li>
+          <li>
+            <strong>Dodatno za I/II kat.:</strong>
+            <span class="badge">
+              proračun max broja ljudi za sigurnu evakuaciju
+            </span>
+            (7. tačka).
+          </li>
+          <li>
+            <strong>Izrada:</strong>
+            ovlašćeno pravno lice (licenca MUP) ili tim sa licencama.
+          </li>
+          <li>
+            <strong>Saglasnost:</strong>
+            MUP daje saglasnost na plan i izmene.
+          </li>
+        </ul>
+        <div class="flex-row">
+          <span class="pill">🧾 procena ugroženosti je polazna osnova</span>
+          <span class="pill">
+            ⏳ rok važenja: prati promene (adaptacije, tehnologija…)
+          </span>
+        </div>
+      </div>
+
+      <!-- 2️⃣ PROCENA UGROŽENOSTI -->
+      <div class="card">
+        <div class="card-header">
+          <span class="emoji-big">📊</span>
+          Procena ugroženosti od požara
+          <span>sastavni deo svakog opšteg akta</span>
+        </div>
+        <ul>
+          <li>
+            <strong>Definicija:</strong>
+            postupak utvrđivanja nivoa ugroženosti i zaštitnih mera.
+          </li>
+          <li>
+            <strong>Osnovni elementi:</strong>
+            postojeće stanje, numerička analiza, stručno mišljenje, predlog
+            mera, zaključak, grafički prilozi.
+          </li>
+          <li>
+            <strong>Obuhvata:</strong>
+            lokaciju, tehnološke procese, požarno opterećenje, evakuaciju,
+            vodosnabdevanje, kategorizaciju …
+          </li>
+          <li>
+            <strong>Primena:</strong>
+            određuje
+            <strong>preventivne mere</strong>
+            i mere za uspešno gašenje.
+          </li>
+        </ul>
+        <div
+          style="
+            margin-top: 6px;
+            background: #161f2b;
+            border-radius: 30px;
+            padding: 4px 16px;
+            display: inline-block;
+          "
+        >
+          🔍
+          <span style="color: #b1bac4">
+            brojni elementi – od površine, do hidrantske mreže i vatrogasnih
+            jedinica
+          </span>
+        </div>
+      </div>
+
+      <!-- 3️⃣ PLAN EVAKUACIJE -->
+      <div class="card">
+        <div class="card-header">
+          <span class="emoji-big">🚪</span>
+          Plan evakuacije + Uputstva za postupanje
+          <span>I, II i III kat.</span>
+        </div>
+        <ul>
+          <li><strong>Obavezno za sve kategorije (I, II, III).</strong></li>
+          <li>
+            <strong>I i II kat.:</strong>
+            samostalan opšti akt.
+          </li>
+          <li>
+            <strong>III kat.:</strong>
+            sastavni deo
+            <strong>Pravila ZOP</strong>
+            .
+          </li>
+          <li>
+            <strong>Mora biti istaknut</strong>
+            na vidljivom, svima dostupnom mestu.
+          </li>
+        </ul>
+        <div
+          style="
+            background: #1f2937;
+            border-radius: 20px;
+            padding: 4px 16px;
+            display: inline-block;
+            margin-top: 2px;
+          "
+        >
+          ⏳ vreme evakuacije – proračun max broja ljudi (Plan ZOP)
+        </div>
+      </div>
+
+      <!-- 4️⃣ PRAVILA ZOP -->
+      <div class="card">
+        <div class="card-header">
+          <span class="emoji-big">⚙️</span>
+          Pravila zaštite od požara (Pravila ZOP)
+          <span>
+            III kat., poslovni/industrijski/javni objekti, stambene zgrade
+          </span>
+        </div>
+        <ul>
+          <li>
+            <strong>Donose:</strong>
+            subjekti koji
+            <em>nisu</em>
+            u obavezi da imaju Plan ZOP (npr. III kat., stambene zgrade).
+          </li>
+          <li>
+            <strong>Sadržaj:</strong>
+            organizacija tehnoloških procesa, zaštita prema nameni objekta, plan
+            evakuacije, obuka zaposlenih, prava/obaveze, proračun evakuacije.
+          </li>
+          <li>
+            <strong>Stambene zgrade:</strong>
+            sadrže organizaciju i plan evakuacije.
+          </li>
+        </ul>
+        <div class="flex-row">
+          <span class="pill">🏢 za poslovne i javne objekte</span>
+          <span class="pill">🏠 obavezno za stambene zgrade</span>
+        </div>
+      </div>
+
+      <!-- 5️⃣ PROGRAM OSNOVNE OBUKE -->
+      <div class="card">
+        <div class="card-header">
+          <span class="emoji-big">🎓</span>
+          Program osnovne obuke zaposlenih
+          <span>svi poslodavci</span>
+        </div>
+        <ul>
+          <li>
+            <strong>Obavezan za svakog poslodavca.</strong>
+            Obuka odmah po stupanju na rad, najkasnije 30 dana.
+          </li>
+          <li>
+            <strong>Deli se na:</strong>
+            opšti deo (opasnosti, mere) + posebni deo (specifičnosti radnog
+            mesta).
+          </li>
+          <li>
+            <strong>Sadržaj:</strong>
+            opasnosti od požara i eksplozije, mere zaštite, postupak gašenja,
+            upotreba opreme, odgovornosti.
+          </li>
+          <li>
+            <strong>Saglasnost MUP</strong>
+            – obavezna (osim za MO).
+          </li>
+          <li>
+            <strong>Provera znanja:</strong>
+            obavezno svake 3 godine.
+          </li>
+        </ul>
+        <div style="margin-top: 6px">
+          <span class="badge">📅 obuka u roku od 30 dana</span>
+          <span class="badge" style="margin-left: 6px">
+            🔄 provera na 3 godine
+          </span>
+        </div>
+      </div>
+
+      <!-- ➕ DODATNE NAPOMENE – KRATKO I FUNDAMENTALNO -->
+      <div class="footnote">
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px 28px;
+            justify-content: space-between;
+          "
+        >
+          <div>
+            <span style="font-weight: 600; color: #f0c674">🧩 Kategorije:</span>
+            <ul style="margin-top: 4px; padding-left: 20px">
+              <li>
+                <strong>I kat.</strong>
+                – vatrogasna jedinica + Plan ZOP
+              </li>
+              <li>
+                <strong>II kat.</strong>
+                – služba ZOP + Plan ZOP
+              </li>
+              <li>
+                <strong>III kat.</strong>
+                – referent ZOP + Pravila ZOP
+              </li>
+            </ul>
+          </div>
+          <div>
+            <span style="font-weight: 600; color: #f0c674">
+              📎 Ostali akti (nekadašnji):
+            </span>
+            <ul style="margin-top: 4px; padding-left: 20px">
+              <li>
+                <s>Sanacioni plan</s>
+                – ukinut 2015.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 20px;
+            justify-content: center;
+            font-size: 0.9rem;
+            color: #b1bac4;
+          "
+        >
+          <span>✅ Plan ZOP → I + II kat. + AP + lokalna</span>
+          <span>✅ Procena ugroženosti → uvek deo Plan ZOP</span>
+          <span>✅ Plan evakuacije → sve kategorije (I, II, III)</span>
+          <span>✅ Pravila ZOP → III kat., stambene, poslovni objekti</span>
+          <span>✅ Program obuke → svi poslodavci</span>
+        </div>
+        <div
+          style="
+            margin-top: 12px;
+            background: #1f2937;
+            border-radius: 40px;
+            padding: 8px 18px;
+            text-align: center;
+            border: 1px solid #30363d;
+          "
+        >
+          🧠
+          <strong>Zlatno pravilo:</strong>
+          svi opšti akti moraju biti
+          <strong>usklađeni sa kategorijom</strong>
+          i imati
+          <strong>saglasnost MUP</strong>
+          (tamo gde je propisano).
+        </div>
+      </div>
+
+      <!-- mali footer -->
+      <div
+        style="
+          margin-top: 28px;
+          border-top: 1px solid #21262d;
+          padding-top: 14px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          color: #8b949e;
+          font-size: 0.85rem;
+        "
+      >
+        <span>📘 Skripte: Normativno uređenje, Preventivna zaštita</span>
+        <span>🎯 za stručni ispit – opšti akti u pravnom licu</span>
+      </div>
+    </div>
+  </body>
+</html>

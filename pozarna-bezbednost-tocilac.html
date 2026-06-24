@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📘 Tocilac – Zaštita od požara (pregled)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #0d1117;
+        color: #e6edf3;
+        font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+        padding: 2rem 1.5rem;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: #161b22;
+        padding: 2rem 2rem 2.5rem;
+        border-radius: 32px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+        border: 1px solid #30363d;
+      }
+
+      h1 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        background: linear-gradient(145deg, #f0883e, #f6a85b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 0.4rem;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .subhead {
+        color: #8b949e;
+        border-left: 3px solid #f0883e;
+        padding-left: 1.2rem;
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+        background: #0d1117;
+        border-radius: 0 20px 20px 0;
+        padding: 0.8rem 1.5rem;
+        width: fit-content;
+      }
+
+      .section {
+        background: #0d1117;
+        border-radius: 24px;
+        padding: 1.8rem 2rem;
+        margin-bottom: 2.2rem;
+        border-left: 6px solid #f0883e;
+        box-shadow: inset 0 0 0 1px #21262d;
+      }
+
+      .section h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        margin-bottom: 1.4rem;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: #f6a85b;
+        border-bottom: 2px dashed #30363d;
+        padding-bottom: 0.5rem;
+      }
+
+      .section h2 span {
+        font-size: 2rem;
+      }
+
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.8rem 2.2rem;
+      }
+
+      .card {
+        background: #161b22;
+        border-radius: 18px;
+        padding: 1.2rem 1.6rem;
+        border: 1px solid #30363d;
+        transition: all 0.15s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .card:hover {
+        border-color: #f6a85b;
+        background: #1c2333;
+      }
+
+      .card .emoji-big {
+        font-size: 1.8rem;
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .card strong {
+        color: #ffb47b;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 0.2rem;
+      }
+
+      .card p {
+        margin-top: 0.4rem;
+        color: #d1d9e6;
+        font-size: 0.98rem;
+        line-height: 1.5;
+      }
+
+      .badge {
+        display: inline-block;
+        background: #1f3a4b;
+        color: #b6e3ff;
+        font-size: 0.7rem;
+        font-weight: 600;
+        padding: 0.2rem 0.8rem;
+        border-radius: 30px;
+        letter-spacing: 0.3px;
+        margin-right: 6px;
+      }
+
+      hr {
+        border: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #30363d, #f0883e, #30363d);
+        margin: 2rem 0 1rem;
+        opacity: 0.3;
+      }
+
+      .highlight-box {
+        background: #1c2a3a;
+        border-radius: 18px;
+        padding: 1.5rem 2rem;
+        margin: 2rem 0 0.5rem;
+        border: 1px solid #f6a85b44;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .highlight-box span {
+        font-size: 1.2rem;
+      }
+
+      .emoji-list {
+        list-style: none;
+        padding: 0;
+      }
+
+      .emoji-list li {
+        padding: 0.5rem 0 0.5rem 2.2rem;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="%23f6a85b" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>')
+          left center no-repeat;
+        background-size: 18px;
+      }
+
+      @media (max-width: 800px) {
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+
+        body {
+          padding: 1rem 0.8rem;
+        }
+
+        .container {
+          padding: 1.2rem;
+        }
+
+        h1 {
+          font-size: 2rem;
+        }
+
+        .section {
+          padding: 1.2rem;
+        }
+      }
+
+      .fire-emoji {
+        filter: drop-shadow(0 0 6px #f0883e55);
+      }
+
+      .footer-note {
+        margin-top: 2.5rem;
+        text-align: center;
+        color: #8b949e;
+        border-top: 1px solid #21262d;
+        padding-top: 1.8rem;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        <span>⛽🧯</span>
+        Tocilac – požarna bezbednost
+      </h1>
+      <div class="subhead">
+        🎯 Minimalni optimalni set · 30 ključnih tačaka · radno mesto na pumpi
+      </div>
+
+      <!-- 1. ZAKONSKO-REGULATIVNA -->
+      <div class="section">
+        <h2>
+          <span>⚖️📋</span>
+          Zakonsko‑regulativna oblast
+        </h2>
+        <div class="grid-2">
+          <div class="card">
+            <span class="emoji-big">🧑‍🚒</span>
+            <strong>Obaveze radnika</strong>
+            <p>
+              Pridržavanje Pravila i Plana ZOP, zabrana pušenja i otvorenog
+              plamena, poznavanje sredstava za gašenje, sprečavanje statičkog
+              elektriciteta, postupanje po Planu evakuacije.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">📄</span>
+            <strong>Plan zaštite od požara</strong>
+            <p>
+              Sadrži procenu ugroženosti, mere prevencije, organizaciju
+              dežurstva, plan evakuacije, uputstva za postupanje i odgovornosti.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🚶‍➡️</span>
+            <strong>Evakuacija sa pumpe</strong>
+            <p>
+              Vrši se prema Planu evakuacije (istaknut na vidnom mestu). Zadužen
+              je rukovodilac smene / lice zaduženo za ZOP. Prvo se evakuišu
+              ugroženi, zatim imovina.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🛡️</span>
+            <strong>Protivpožarna straža</strong>
+            <p>
+              Organizuje se kod pretakanja >5m³, zavarivanja na privremenim
+              mestima, javnih skupova, žetvenih radova i posle požara – radi
+              nadzora.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🏢</span>
+            <strong>Obaveze poslodavca (III kategorija)</strong>
+            <p>
+              Organizuje preventivne mere, obezbeđuje opremu i sredstva za
+              gašenje, stručno osposobljena lica (referent ZOP) i donosi Pravila
+              ZOP sa Planom evakuacije.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. OPASNE MATERIJE I PROCES GORENJA -->
+      <div class="section">
+        <h2>
+          <span>🧪🔥</span>
+          Opasne materije &amp; proces gorenja
+        </h2>
+        <div class="grid-2">
+          <div class="card">
+            <span class="emoji-big">📦</span>
+            <strong>Klasifikacija (UN)</strong>
+            <p>
+              9 klasa.
+              <strong>Benzin i dizel</strong>
+              spadaju u
+              <strong>klasu 3</strong>
+              – zapaljive tečnosti (pare se pale na izvoru paljenja).
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">⬇️⬆️</span>
+            <strong>DGE / GGE</strong>
+            <p>
+              <strong>Donja (DGE)</strong>
+              – najniža konc. u vazduhu pri kojoj dolazi do paljenja.
+              <br />
+              <strong>Gornja (GGE)</strong>
+              – najviša konc. iznad koje nema eksplozije.
+              <br />
+              Na pumpi je ključno jer benzinske pare lako dostižu DGE.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">💨</span>
+            <strong>Eksplozivna atmosfera</strong>
+            <p>
+              Nastaje kada se zapaljive pare/ gasovi pomešaju sa vazduhom u
+              granicama DGE–GGE. Uslovi: goriva materija, kiseonik (>15%) i
+              izvor paljenja.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🌡️</span>
+            <strong>Temp. karakteristike</strong>
+            <p>
+              <strong>Temperatura paljenja (plamište)</strong>
+              – najniža temp. na kojoj tečnost daje dovoljno para za paljenje.
+              <br />
+              <strong>Samopaljenje</strong>
+              – paljenje bez spoljnog izvora, važno za bezbedno skladištenje.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">💥</span>
+            <strong>BLEVE</strong>
+            <p>
+              Eksplozija vatrene lopte – nastaje naglim isparavanjem tečnog
+              goriva iz rezervoara izloženog vatri. Opasna jer širi vatru i
+              fragmentaciju.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. PREVENTIVNE MERE -->
+      <div class="section">
+        <h2>
+          <span>🛑🧯</span>
+          Preventivne mere – radno mesto
+        </h2>
+        <div class="grid-2">
+          <div class="card">
+            <span class="emoji-big">🚭</span>
+            <strong>Zabrane</strong>
+            <p>
+              Pušenje, otvoren plamen, upotreba uređaja koji varniče, rad motora
+              vozila tokom pretakanja, korišćenje mobilnih telefona u zoni
+              opasnosti.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">⚡</span>
+            <strong>Statički elektricitet</strong>
+            <p>
+              Nastaje trenjem, strujanjem tečnosti. Mere:
+              <strong>uzemljenje</strong>
+              opreme, antistatička obuća, povećanje vlažnosti, upotreba
+              antistatičkih dodataka.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🌬️</span>
+            <strong>Ventilacija</strong>
+            <p>
+              Prirodna ili mehanička – održava koncentraciju para ispod 10% DGE.
+              Sprečava stvaranje eksplozivne atmosfere u skladištima i
+              prostorijama sa gorivom.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">⚡🌩️</span>
+            <strong>Gromobranska instalacija</strong>
+            <p>
+              Štiti od atmosferskog pražnjenja. Obavezno redovno ispitivanje
+              uzemljenja (otpor &lt;10 Ω za objekte sa zapaljivim tečnostima).
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🟥🟧🟨</span>
+            <strong>Opasne zone (0,1,2)</strong>
+            <p>
+              <strong>Zona 0</strong>
+              – stalna eksplozivna atmosfera (unutrašnjost rezervoara).
+              <br />
+              <strong>Zona 1</strong>
+              – verovatna pojava (oko otvora, ventila).
+              <br />
+              <strong>Zona 2</strong>
+              – retka i kratkotrajna pojava (šire okruženje).
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">📊</span>
+            <strong>Požarno opterećenje</strong>
+            <p>
+              Ukupna toplotna vrednost gorivih materija po m². Za pumpu se
+              procenjuje kroz količinu goriva, ambalažu, građevinske materijale.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🪣🧹</span>
+            <strong>Izliveno gorivo – prva intervencija</strong>
+            <p>
+              Prekinuti točenje, zabraniti paljenje, obavestiti rukovodioca,
+              rasuti pesak / upijajući materijal, sakupiti, prikupiti aparat za
+              gašenje.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. SREDSTVA ZA GAŠENJE -->
+      <div class="section">
+        <h2>
+          <span>🧯🔥</span>
+          Sredstva za gašenje – ručni aparati
+        </h2>
+        <div class="grid-2">
+          <div class="card">
+            <span class="emoji-big">🧯</span>
+            <strong>Ručni aparati na pumpi</strong>
+            <p>
+              Najčešće:
+              <strong>ABCE prah</strong>
+              (klase A,B,C,E) i
+              <strong>CO₂</strong>
+              (klase B,C,E). Pesak, ćebe, lopata – priručna sredstva.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🔄</span>
+            <strong>Aktiviranje aparata</strong>
+            <p>
+              <strong>Prah (novi tip):</strong>
+              izvući osigurač → usmeriti mlaznicu u podnožje plamena →
+              pritisnuti ručicu.
+              <br />
+              <strong>CO₂:</strong>
+              izvući osigurač → usmeriti mlaznicu → odvrnuti ventil / pritisnuti
+              ručicu.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">⛔</span>
+            <strong>Granica prekida gorenja</strong>
+            <p>
+              Gorenje prestaje kada konc. kiseonika padne ispod ~15%. Prah i CO₂
+              postižu to razblaživanjem / izolacijom.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🧪</span>
+            <strong>Prah – način delovanja</strong>
+            <p>
+              <strong>Antikatalitički</strong>
+              (prekida lančanu reakciju) +
+              <strong>gušenje</strong>
+              (stvara barijeru). Pogodan jer je neprovodan i efikasan na
+              tečnosti i gasove (klase B,C).
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🧊</span>
+            <strong>CO₂ – delovanje i zabrana</strong>
+            <p>
+              Guši (smanjuje O₂), hladi.
+              <strong>NE sme</strong>
+              se koristiti na metalima klase D (reaguje na visokim temp.) i na
+              materijama koje sadrže sopstveni kiseonik.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🪣</span>
+            <strong>Priručna sredstva</strong>
+            <p>
+              Pesak, zemlja, ćebe, lopata – za početno gašenje manjih požara
+              (klasa B i D), posipanjem ili prekrivanjem.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. TAKTIKA GAŠENJA -->
+      <div class="section">
+        <h2>
+          <span>🧑‍🚒⚡</span>
+          Taktika gašenja – pumpa
+        </h2>
+        <div class="grid-2">
+          <div class="card">
+            <span class="emoji-big">📞</span>
+            <strong>Redosled radnji</strong>
+            <p>
+              1) Dojava vatrogascima / MUP
+              <br />
+              2) Gašenje početnog požara (aparat, pesak)
+              <br />
+              3) Evakuacija ljudi
+              <br />
+              4) Isključenje napajanja / ventila
+              <br />
+              5) Prekid točenja.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🚗</span>
+            <strong>Požar na vozilu koje se toči</strong>
+            <p>
+              Prekinuti točenje, izvući ključ, ugasiti motor, izvući vozača,
+              gasiti prahom/CO₂ iz bezbedne distance (ne otvarati haubu naglo).
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">⛽</span>
+            <strong>Požar na pumpnoj stanici (uredjaj)</strong>
+            <p>
+              Pritisnuti STOP dugme, isključiti napajanje, gasiti prahom iz
+              sigurnog rastojanja, sprečiti širenje na rezervoare.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🛢️</span>
+            <strong>Požar klase B (tečnosti) na otvorenom</strong>
+            <p>
+              Koristiti prah, penu ili pesak. Ne gasiti vodom (širi požar).
+              Hladiti okolne površine.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">🏠➡️</span>
+            <strong>Unutrašnja / spoljašnja navala</strong>
+            <p>
+              <strong>Unutrašnja</strong>
+              – kroz ulaz u objekat.
+              <strong>Spoljašnja</strong>
+              – sa spoljne strane. Na pumpi se koristi spoljašnja pristup (zbog
+              eksplozivne zone).
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">⛽🛢️</span>
+            <strong>Požar u podzemnom rezervoaru</strong>
+            <p>
+              Odmah dojaviti, evakuisati zonu, ne gasiti vodom – koristiti penu
+              / prah, hladiti okolne rezervoare, čekati vatrogasce.
+            </p>
+          </div>
+          <div class="card">
+            <span class="emoji-big">💨</span>
+            <strong>Odimljavanje pumpe</strong>
+            <p>
+              Prirodno (otvaranje otvora) ili mehanički (ventilatori). Važno za
+              uklanjanje toksičnih gasova, povećanje vidljivosti i smanjenje
+              opasnosti od eksplozije.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- dodatne napomene -->
+      <hr />
+      <div class="highlight-box">
+        <span>
+          🧠
+          <strong>Zapamti:</strong>
+          Voda NE za klase B (tečnosti) i E (elektro). Prah ABCE i CO₂ su
+          osnovni. Uvek prvo ugasi, zatim evakuiši.
+        </span>
+        <span style="font-size: 1.8rem">🔥🧯</span>
+      </div>
+
+      <!-- mini tabela klasa -->
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.8rem 2.5rem;
+          background: #0d1117;
+          padding: 1.2rem 1.8rem;
+          border-radius: 30px;
+          margin-top: 1.8rem;
+          border: 1px solid #30363d;
+        "
+      >
+        <div>
+          <span style="color: #f6a85b">A</span>
+          – čvrste materije (drvo, papir)
+        </div>
+        <div>
+          <span style="color: #f6a85b">B</span>
+          – zapaljive tečnosti (benzin, ulje)
+        </div>
+        <div>
+          <span style="color: #f6a85b">C</span>
+          – zapaljivi gasovi
+        </div>
+        <div>
+          <span style="color: #f6a85b">D</span>
+          – metali (NE CO₂, NE voda)
+        </div>
+        <div>
+          <span style="color: #f6a85b">E</span>
+          – električni uređaji (samo neprovodna sredstva)
+        </div>
+        <div>
+          <span style="color: #f6a85b">F</span>
+          – ulja i masti (posebna sredstva)
+        </div>
+      </div>
+
+      <div class="footer-note">
+        ✅ Na osnovu skripti i pitanja za tocila · pripremljeno za polaganje
+        stručnog ispita
+      </div>
+    </div>
+  </body>
+</html>

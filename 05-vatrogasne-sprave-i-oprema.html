@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📘 Vatrogasne sprave i oprema - SAŽETAK</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #0d1117;
+        color: #e6edf3;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 2rem 1.5rem;
+        line-height: 1.5;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 2.1rem;
+        border-bottom: 3px solid #f0883e;
+        padding-bottom: 0.3rem;
+        margin-bottom: 1.8rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      h2 {
+        font-size: 1.5rem;
+        margin: 1.6rem 0 0.8rem 0;
+        background: #1c2333;
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        display: inline-block;
+        border-left: 6px solid #f0883e;
+        color: #f0c08e;
+      }
+      .card {
+        background: #161b22;
+        border-radius: 18px;
+        padding: 1.2rem 1.5rem;
+        margin-bottom: 1.5rem;
+        border: 1px solid #30363d;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+        transition: 0.2s;
+      }
+      .card:hover {
+        border-color: #f0883e;
+        background: #1c2333;
+      }
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+      }
+      .tag {
+        display: inline-block;
+        background: #2d3748;
+        padding: 0.1rem 0.8rem;
+        border-radius: 30px;
+        font-size: 0.85rem;
+        color: #c9d1d9;
+        margin-right: 0.4rem;
+      }
+      .emoji-big {
+        font-size: 1.4rem;
+        margin-right: 6px;
+      }
+      ul,
+      .lista {
+        list-style: none;
+        padding-left: 0.2rem;
+      }
+      li {
+        padding: 0.3rem 0 0.1rem 0;
+        border-bottom: 1px solid #2a2f3a;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      li:last-child {
+        border-bottom: none;
+      }
+      .kljuc {
+        background: #1e2a3a;
+        border-radius: 30px;
+        padding: 0.2rem 0.9rem;
+        font-weight: 600;
+        color: #f0b27a;
+        white-space: nowrap;
+      }
+      .oznaka {
+        background: #2d3748;
+        border-radius: 12px;
+        padding: 0.1rem 0.7rem;
+        font-family: monospace;
+        font-size: 0.9rem;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem 1.2rem;
+        margin: 0.4rem 0;
+      }
+      .badge {
+        background: #1f2a3f;
+        padding: 0.2rem 0.9rem;
+        border-radius: 40px;
+        font-size: 0.9rem;
+        border: 1px solid #3d4a5c;
+      }
+      .podnaslov {
+        font-weight: 700;
+        color: #b9d0f0;
+        margin-top: 0.6rem;
+      }
+      @media (max-width: 700px) {
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+        body {
+          padding: 1rem 0.8rem;
+        }
+      }
+      hr {
+        border: 0.5px solid #2d3748;
+        margin: 1rem 0;
+      }
+      .footer-note {
+        text-align: center;
+        opacity: 0.7;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+      }
+      .ikonica {
+        font-size: 1.3rem;
+        min-width: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      🧯 VATROGASNE SPRAVE I OPREMA
+      <span style="font-size: 1.2rem; font-weight: 400; margin-left: auto">
+        📌 sažetak za ispit
+      </span>
+    </h1>
+
+    <!-- 1. STANDARDIZACIJA -->
+    <div class="card">
+      <h2>📐 1. Standardizacija &amp; tipizacija</h2>
+      <div class="row">
+        <span class="badge">📏 standard → red u proizvodnji</span>
+        <span class="badge">📄 SRPS / EN</span>
+        <span class="badge">🔴 svi aparati crveni</span>
+      </div>
+      <div class="row" style="margin-top: 6px">
+        <span class="kljuc">A Ø110</span>
+        <span class="kljuc">B Ø75</span>
+        <span class="kljuc">C Ø52</span>
+        <span class="kljuc">D Ø25</span>
+      </div>
+      <div style="margin-top: 6px">
+        <span class="tag">🧰 ručni aparati ≤20kg</span>
+        <span class="tag">🚛 prevozni ≤260kg</span>
+      </div>
+    </div>
+
+    <!-- 2. PODELA OPREME -->
+    <div class="card">
+      <h2>🧤 2. Lična vs zajednička oprema</h2>
+      <div class="grid-2">
+        <div>
+          <div class="podnaslov">👤 LIČNA</div>
+          <ul class="lista">
+            <li>
+              <span class="ikonica">👕</span>
+              Radno-zaštitna odeća (Gorotex, Nomax, do 400°C)
+            </li>
+            <li>
+              <span class="ikonica">🥾</span>
+              Obuća (guma, koža, ojačanja)
+            </li>
+            <li>
+              <span class="ikonica">⛑️</span>
+              Šlem (do 150°C, ~980g)
+            </li>
+            <li>
+              <span class="ikonica">🧗</span>
+              Opasač (sintetika, ispitivanje svaka 3 meseca, vek 20 god.)
+            </li>
+            <li>
+              <span class="ikonica">🪓</span>
+              Sekirica (za otvaranje)
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="podnaslov">🏢 ZAJEDNIČKA</div>
+          <ul class="lista">
+            <li>
+              <span class="ikonica">🔥</span>
+              Zaštita od plamena/toploTe
+            </li>
+            <li>
+              <span class="ikonica">💧</span>
+              Oprema za gašenje (voda, pena, creva, aparati)
+            </li>
+            <li>
+              <span class="ikonica">🪜</span>
+              Penjanje (lestve, platforme)
+            </li>
+            <li>
+              <span class="ikonica">🆘</span>
+              Spasavanje (spusnice, užad, vazdušni jastuk)
+            </li>
+            <li>
+              <span class="ikonica">🔧</span>
+              Tehnička oprema i alat
+            </li>
+            <li>
+              <span class="ikonica">🚒</span>
+              Vozila
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. APARATI ZA DISANJE -->
+    <div class="card">
+      <h2>🫁 3. Zaštita disajnih organa</h2>
+      <div class="row">
+        <span class="badge">🧪 Filtracione (O₂ >17%)</span>
+        <span class="badge">🛡️ Izolacione (vazduh / kiseonik)</span>
+        <span class="badge">🌀 Cevni (uski prostori)</span>
+      </div>
+      <div style="margin-top: 0.5rem">
+        <div>
+          <span class="kljuc">💨 SA KOMPRIMOVANIM VAZDUHOM</span>
+          – boce 4–7L, 200–300 bara, potrošnja 10–85 L/min. Redukcija 5 bar → 1
+          bar.
+          <strong>
+            K
+            <sub>v</sub>
+            = V × p
+          </strong>
+        </div>
+        <div style="margin-top: 0.3rem">
+          <span class="kljuc">🫧 SA KISEONIKOM</span>
+          – regeneracija 95%, do 4h rada, 150–200 bara.
+        </div>
+        <div
+          style="
+            margin-top: 0.3rem;
+            background: #1c2333;
+            padding: 0.3rem 1rem;
+            border-radius: 30px;
+            display: inline-block;
+          "
+        >
+          📌 OSNOVNI POSTULAT: u zatvoren prostor sa maskom, u prostor koji gori
+          sa sredstvom za gašenje.
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. ZAŠTITA OD PLAMENA I TOPLOTE -->
+    <div class="card">
+      <h2>🔥 4. Oprema od plamena i toplote</h2>
+      <ul class="lista">
+        <li>
+          <span class="ikonica">🟠</span>
+          <strong>Odelo za prilaz vatri</strong>
+          – aluminijumska vlakna, do 400°C (nafta, derivati)
+        </li>
+        <li>
+          <span class="ikonica">🔴</span>
+          <strong>Odelo za prolaz kroz vatru</strong>
+          – do 700°C (do 1500°C / 20s),
+          <u>obavezno sa izolacionim aparatom</u>
+        </li>
+        <li>
+          <span class="ikonica">🧪</span>
+          <strong>Odelo za agresivne materije</strong>
+          – guma, PVC, za kiseline i baze (potpuna/delimična zaštita)
+        </li>
+      </ul>
+      <div>
+        <span class="tag">
+          🧼 održavanje: hlađenje, vlažna krpa, prirodno sušenje
+        </span>
+      </div>
+    </div>
+
+    <!-- 5. RUČNI APARATI -->
+    <div class="card">
+      <h2>🧯 5. Ručni aparati za gašenje</h2>
+      <div style="overflow-x: auto">
+        <table
+          style="width: 100%; border-collapse: collapse; font-size: 0.9rem"
+        >
+          <tr style="background: #1f2a3f">
+            <th style="padding: 6px 10px; text-align: left">Tip</th>
+            <th style="padding: 6px 10px; text-align: left">Sredstvo</th>
+            <th style="padding: 6px 10px; text-align: left">Klase</th>
+            <th style="padding: 6px 10px; text-align: left">Napon</th>
+          </tr>
+          <tr>
+            <td>S, S-A</td>
+            <td>Prah</td>
+            <td>A, B, C, D</td>
+            <td>do 1000V</td>
+          </tr>
+          <tr>
+            <td>CO₂</td>
+            <td>Ugljen-dioksid</td>
+            <td>B, C</td>
+            <td>do 10.000V</td>
+          </tr>
+          <tr>
+            <td>VP / V</td>
+            <td>Voda / pena</td>
+            <td>A, B</td>
+            <td>⛔ NE za elektro</td>
+          </tr>
+          <tr>
+            <td>HL</td>
+            <td>Halon</td>
+            <td>B, C</td>
+            <td>do 30.000V</td>
+          </tr>
+        </table>
+      </div>
+      <div style="margin-top: 10px">
+        <span class="kljuc">🧨 Aktiviranje S (stari tip sa bočicom):</span>
+        izvući osigurač → pritisnuti ručicu →
+        <u>otpustiti</u>
+        (čekati 3–10s) → usmeriti →
+        <u>ponovo</u>
+        pritisnuti i gasiti prekidno, niz vetar.
+      </div>
+      <div style="margin-top: 6px">
+        <span class="tag">📅 kontrola svakih 6 meseci (prah, CO₂ masa)</span>
+        <span class="tag">💧 hidroispitivanje svake 2 godine na 18 bara</span>
+      </div>
+    </div>
+
+    <!-- 6. BRENTAČA, NAPRTNJAČA, V-9 -->
+    <div class="card">
+      <h2>🪣 6. Vodeni aparati – brentača, naprtnjača</h2>
+      <ul class="lista">
+        <li>
+          <span class="ikonica">⛽</span>
+          <strong>Brentača (VP)</strong>
+          – klipna pumpa, ~10 L/min (50 pokreta/min). Za penu: 0.6L penila na
+          14L vode.
+          <span class="tag">⛔ ne za elektro</span>
+        </li>
+        <li>
+          <span class="ikonica">🎒</span>
+          <strong>Naprtnjača</strong>
+          – 25L vode, za šumske požare.
+        </li>
+        <li>
+          <span class="ikonica">💦</span>
+          <strong>V-9</strong>
+          – raspršena voda, klasa A, povremeno B, kontrola svakih 6 meseci.
+        </li>
+      </ul>
+    </div>
+
+    <!-- 7. MLAZNICE -->
+    <div class="card">
+      <h2>💧 7. Mlaznice za vodu</h2>
+      <div class="row">
+        <span class="badge">🔵 Obične – pun mlaz</span>
+        <span class="badge">🟢 Univerzalne – pun/raspršeni</span>
+        <span class="badge">
+          🟠 Specijalne (pištolj, monsun, dubinske, monitor)
+        </span>
+      </div>
+      <ul class="lista">
+        <li>
+          <span class="ikonica">🔫</span>
+          <strong>Pištolj</strong>
+          – voda, magla, pena; mali utrošak.
+        </li>
+        <li>
+          <span class="ikonica">🌀</span>
+          <strong>Monsun</strong>
+          – 9 raspršivača, za napone do 380kV (min. rastojanje 2–5m).
+        </li>
+        <li>
+          <span class="ikonica">📏</span>
+          <strong>Dubinska</strong>
+          – 1.5m, 18 rupa, za žita, ugalj.
+        </li>
+        <li>
+          <span class="ikonica">📡</span>
+          <strong>Monitor</strong>
+          – domet 30–120m, za požare klase B.
+        </li>
+      </ul>
+      <div>
+        <span class="tag">📊 protok 50–400 L/min</span>
+        <span class="tag">📐 optimalni ugao: 32° horiz, 80° vert</span>
+      </div>
+    </div>
+
+    <!-- 8. SPOJNICE, CREVA, USISNA KORPA -->
+    <div class="card">
+      <h2>🔗 8. Spojnice, creva, usisna korpa</h2>
+      <ul class="lista">
+        <li>
+          <span class="ikonica">🔩</span>
+          <strong>Spojnice</strong>
+          – A,B,C,D (prečnici). Ispitivanje na 25 bara. Vrste: usisne, potisne,
+          stabilne, prelazne, slepe.
+        </li>
+        <li>
+          <span class="ikonica">🧵</span>
+          <strong>Usisna creva</strong>
+          – godišnje ispitivanje na 6 bara (mokro/suvo).
+        </li>
+        <li>
+          <span class="ikonica">🔴</span>
+          <strong>Potisna creva</strong>
+          – radni pritisci: A=6, B=16, C=16, D=25 bara. Dužine 15–20m.
+        </li>
+        <li>
+          <span class="ikonica">🧺</span>
+          <strong>Usisna korpa</strong>
+          – održava vodeni stub, štiti pumpu od nečistoća. Ispitivanje: godišnje
+          na 2/4 bara.
+        </li>
+      </ul>
+    </div>
+
+    <!-- 9. RAZDELNICA, SABIRNICA, HIDRANTI -->
+    <div class="card">
+      <h2>📤 9. Razdelnica, sabirnica, hidranti</h2>
+      <ul class="lista">
+        <li>
+          <span class="ikonica">🔀</span>
+          <strong>Razdelnica</strong>
+          – razdvaja vodu na do 3 mlaza (blizu požara).
+        </li>
+        <li>
+          <span class="ikonica">🔁</span>
+          <strong>Sabirnica</strong>
+          – spaja 2 izvora u 1 crevo (veći kapacitet).
+        </li>
+        <li>
+          <span class="ikonica">🚰</span>
+          <strong>Hidranti</strong>
+          – spoljašnji (podzemni/nadzemni) i unutrašnji (mokri/suvi).
+          <span class="tag">🏢 zgrade preko 4 sprata → obavezni</span>
+          Rastojanje 80–150m, pritisak ≥2.5 bara.
+        </li>
+      </ul>
+    </div>
+
+    <!-- 10. PUMPE -->
+    <div class="card">
+      <h2>⚙️ 10. Vatrogasne pumpe</h2>
+      <div class="row">
+        <span class="badge">🔧 Klipne (brentača)</span>
+        <span class="badge">🌀 Centrifugalne</span>
+      </div>
+      <ul class="lista">
+        <li>
+          <span class="ikonica">📊</span>
+          <strong>Podela po pritisku:</strong>
+          niski (&lt;3 bar), srednji (3–10 bar), visoki (&gt;10 bar).
+        </li>
+        <li>
+          <span class="ikonica">🔗</span>
+          <strong>Redna veza</strong>
+          – za visinske razlike (povećanje pritiska).
+        </li>
+        <li>
+          <span class="ikonica">🔗</span>
+          <strong>Paralelna veza</strong>
+          – za veći protok (kapacitet).
+        </li>
+        <li>
+          <span class="ikonica">🔄</span>
+          <strong>Vakuum uređaj</strong>
+          – podpritisak, praktična dubina usisavanja ~7.5m.
+        </li>
+        <li>
+          <span class="ikonica">⛏️</span>
+          <strong>Dubinske pumpe</strong>
+          – turbopumpe (do 60m), elektropumpe (do 40m).
+        </li>
+      </ul>
+    </div>
+
+    <!-- 11. PENA I SPASAVANJE -->
+    <div class="card">
+      <h2>🧼 11. Pena &amp; spasavanje</h2>
+      <ul class="lista">
+        <li>
+          <span class="ikonica">🧴</span>
+          <strong>Mešači pene:</strong>
+          predmešalica (na vozilu, 1–6%), međumešalica (samostalna).
+        </li>
+        <li>
+          <span class="ikonica">💨</span>
+          <strong>Penogenerator</strong>
+          – kapacitet do 1250 m³/min, pritisak 2.5–3 bara.
+        </li>
+        <li>
+          <span class="ikonica">🪜</span>
+          <strong>Lestve</strong>
+          – drvo/ aluminijum, ispitivanje sa 80kg.
+        </li>
+        <li>
+          <span class="ikonica">🪢</span>
+          <strong>Spusnice</strong>
+          – otvorene (vežba), zatvorene (kliznice do 150m, 25–30 osoba/min).
+        </li>
+        <li>
+          <span class="ikonica">🛟</span>
+          <strong>Vazdušni jastuk</strong>
+          – do 30m visine (10 spratova), 7.5×5.5×2m.
+        </li>
+        <li>
+          <span class="ikonica">🧗</span>
+          <strong>Samospasilac "Jonker"</strong>
+          – uže 60m.
+        </li>
+      </ul>
+    </div>
+
+    <!-- 12. TEHNIČKA OPREMA, VOZILA -->
+    <div class="card">
+      <h2>🔧 12. Tehnička oprema &amp; vozila</h2>
+      <ul class="lista">
+        <li>
+          <span class="ikonica">✂️</span>
+          <strong>Hidraulični alat</strong>
+          – makaze, razupirači, pneumatski jastuci (12–67 tona).
+        </li>
+        <li>
+          <span class="ikonica">🚒</span>
+          <strong>Vozila:</strong>
+          komandno (nema vodu), navalno (1300–5500L), kombi, auto-cisterna
+          (5000–10000L).
+        </li>
+        <li>
+          <span class="ikonica">🪜</span>
+          <strong>Automehaničke lestve</strong>
+          – do 50m, korpa za 3–4 osobe.
+        </li>
+        <li>
+          <span class="ikonica">🏗️</span>
+          <strong>Hidraulična platforma</strong>
+          – do 90m (do 19 spratova), nosivost 540kg.
+        </li>
+      </ul>
+    </div>
+
+    <!-- 13. STABILNI SISTEMI -->
+    <div class="card">
+      <h2>🏛️ 13. Stabilni sistemi za dojavu i gašenje</h2>
+      <div>
+        <span class="kljuc">📡 Dojavni sistem</span>
+        – ručni (na 1.5m, razmak 40m) i automatski javljači (termički, dimni,
+        plamen, gas).
+        <span class="tag">📦 zone ≤1600m², max 25 automatskih</span>
+      </div>
+      <div style="margin-top: 10px">
+        <span class="kljuc">🧯 Stabilni sistemi za gašenje</span>
+        <div class="grid-2" style="margin-top: 6px">
+          <div>
+            <span class="badge">💧 Sprinkler</span>
+            – mokri/suvi, 57–260°C, 9–12m² po mlaznici
+          </div>
+          <div>
+            <span class="badge">🌊 Drencher</span>
+            – otvorene mlaznice, vodene zavese
+          </div>
+          <div>
+            <span class="badge">🧂 Prah</span>
+            – 0.6–1 kg/m³ zapreminski, 4 kg/m² površinski
+          </div>
+          <div>
+            <span class="badge">🫧 CO₂</span>
+            – 58.6 bara, potpuna zaštita (2min), delimična (&lt;30s)
+          </div>
+          <div>
+            <span class="badge">🧪 Inergen</span>
+            – 52% N₂, 40% Ar, 8% CO₂, 150 bara, 60s zasićenje
+          </div>
+          <div>
+            <span class="badge">☣️ Halon</span>
+            – 7–4% konc., 10–12 bara (stalni pritisak)
+          </div>
+        </div>
+      </div>
+      <div style="margin-top: 10px">
+        <span class="tag">
+          🔌 PP centrala – autonomno napajanje 72h, dnevni/noćni režim
+        </span>
+        <span class="tag">📋 alarmni plan – procedura za svaku zonu</span>
+      </div>
+    </div>
+
+    <!-- 14. DODATNO - VAZDUH, VODA, VEZA -->
+    <div class="card">
+      <h2>✈️ 14. Vazdušna/vodena sredstva &amp; veza</h2>
+      <ul class="lista">
+        <li>
+          <span class="ikonica">🛩️</span>
+          <strong>Avioni</strong>
+          – kapacitet 6000–42000L, Kanader CL-215 >5000L.
+        </li>
+        <li>
+          <span class="ikonica">🚁</span>
+          <strong>Helikopteri</strong>
+          – transport, spasavanje.
+        </li>
+        <li>
+          <span class="ikonica">🚢</span>
+          <strong>Vatrogasni brod</strong>
+          – domet mlaza do 120m, gašenje na vodi.
+        </li>
+        <li>
+          <span class="ikonica">📻</span>
+          <strong>Veza</strong>
+          – simplex (1 frekvencija), duplex (2 frekvencije, paralelno),
+          semiduplex (2 frekvencije, naizmenično).
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-note">
+      ⭐ Sažeto prema skripti – ključne tačke za polaganje ispita ⭐
+    </div>
+  </body>
+</html>

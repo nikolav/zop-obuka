@@ -1,0 +1,217 @@
+# ================================
+# OS / Editor / Environment Files
+# ================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.workspace
+*.sublime-workspace
+*.sublime-project
+
+# ================================
+# Dependency Directories
+# ================================
+
+# Node.js / npm / yarn
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+.pnpm-store/
+
+# Python (if using Python for build tools)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Ruby (if using Jekyll or similar)
+.bundle/
+Gemfile.lock
+vendor/bundle/
+vendor/ruby/
+
+# ================================
+# Build / Output Directories
+# ================================
+
+# Static site generators (Hugo, Jekyll, Gatsby, Next.js, etc.)
+/public/
+/dist/
+/build/
+/.cache/
+/.next/
+/out/
+/_site/
+/.jekyll-cache/
+/.jekyll-metadata
+
+# ================================
+# Documentation Build Outputs
+# ================================
+
+# Docs generation tools (Docusaurus, MkDocs, Sphinx, etc.)
+/docs/_build/
+/docs/build/
+/docs/site/
+/docs/.docusaurus/
+/docs/.vitepress/dist/
+/docs/.vuepress/dist/
+/docs/api/
+/docs/coverage/
+
+# ================================
+# Environment & Configuration Files
+# ================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+*.env
+
+# ================================
+# Logs & Temporary Files
+# ================================
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ================================
+# Test Coverage
+# ================================
+
+coverage/
+.nyc_output/
+coverage.lcov
+test-results/
+jest-coverage/
+
+# ================================
+# Misc / Safe to Ignore
+# ================================
+
+# Local configuration files (except templates)
+*.local
+*_local.*
+
+# Backup files
+*.bak
+*.old
+*.orig
+
+# Archives (unless you want to track them)
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# ================================
+# Docker / Container
+# ================================
+
+.dockerignore
+Dockerfile.*.swp
+.docker/
+*.pid
+*.pid.lock
+
+# ================================
+# Static App Specific
+# ================================
+
+# Static site assets (generated)
+/assets/generated/
+/static/generated/
+
+# Image optimization cache
+/.next/cache/
+/gatsby-cache/
+/.cache-loader/
+
+# Service worker caches
+sw.js
+sw.*.js
+workbox-*.js
+
+# ================================
+# Documentation Specific
+# ================================
+
+# Docs dependencies
+/docs/node_modules/
+/docs/.cache/
+/docs/.parcel-cache/
+
+# API generated docs
+/docs/api/generated/
+/docs/redoc-static.html
+
+# ================================
+# Git hooks
+# ================================
+
+.git/hooks/
+.husky/_
+.husky/*.local
+
+# ================================
+# Optional: Keep only if needed
+# ================================
+
+# Uncomment if you want to ignore specific doc formats
+# *.pdf
+# *.epub
+# *.mobi
+
+# Uncomment if you want to ignore generated readme files
+# README.html
+# README.pdf

@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🧯 Požarna bezbednost – centralna strana</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #0b0e14;
+        color: #e8edf2;
+        font-family:
+          "Segoe UI",
+          "Roboto",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1.5rem;
+        line-height: 1.5;
+      }
+
+      .container {
+        max-width: 1100px;
+        width: 100%;
+        background: #141a24;
+        border-radius: 48px 48px 40px 40px;
+        padding: 2.8rem 2.5rem 3.2rem;
+        box-shadow:
+          0 20px 40px rgba(0, 0, 0, 0.7),
+          0 0 0 1px rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(2px);
+        transition: all 0.2s ease;
+      }
+
+      h1 {
+        font-size: 2.8rem;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        margin-bottom: 0.2rem;
+        border-bottom: 2px solid #2d3a4b;
+        padding-bottom: 1.2rem;
+      }
+
+      h1 span {
+        background: #25303e;
+        padding: 0.2rem 1rem;
+        border-radius: 80px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #b6c8e0;
+        letter-spacing: 0.3px;
+      }
+
+      .subhead {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -0.2rem;
+        margin-bottom: 2.5rem;
+        font-size: 1rem;
+        color: #8b9bb5;
+        border-bottom: 1px dashed #2a3442;
+        padding-bottom: 0.9rem;
+        flex-wrap: wrap;
+      }
+
+      .subhead .badge {
+        background: #1f2a38;
+        padding: 0.3rem 1.2rem;
+        border-radius: 40px;
+        font-size: 0.85rem;
+        color: #bacee6;
+        letter-spacing: 0.4px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1.4rem;
+        margin-top: 0.8rem;
+      }
+
+      .card {
+        background: #1c2635;
+        border-radius: 28px;
+        padding: 1.2rem 1.2rem 1.2rem 1.6rem;
+        transition: all 0.2s ease;
+        border: 1px solid #2b3749;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        backdrop-filter: blur(2px);
+        text-decoration: none;
+        color: #e4ebf5;
+        font-weight: 500;
+        font-size: 1.05rem;
+        line-height: 1.3;
+        word-break: break-word;
+      }
+
+      .card:hover {
+        background: #27344a;
+        border-color: #5a7299;
+        transform: translateY(-3px) scale(1.01);
+        box-shadow:
+          0 12px 28px rgba(0, 0, 0, 0.7),
+          0 0 0 1px #3f5470;
+      }
+
+      .card .emoji-big {
+        font-size: 2rem;
+        line-height: 1;
+        filter: drop-shadow(0 2px 4px #00000066);
+        min-width: 2.6rem;
+        text-align: center;
+      }
+
+      .card .info {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .card .title {
+        font-weight: 600;
+        letter-spacing: -0.2px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-wrap: wrap;
+      }
+
+      .card .filename {
+        font-size: 0.7rem;
+        font-weight: 400;
+        opacity: 0.6;
+        background: #10161f;
+        padding: 0.1rem 0.7rem;
+        border-radius: 40px;
+        display: inline-block;
+        margin-top: 3px;
+        letter-spacing: 0.2px;
+        color: #a3b9d4;
+        max-width: fit-content;
+        border: 1px solid #2f3d52;
+      }
+
+      .card .filename code {
+        font-family: "SF Mono", "Fira Code", monospace;
+        font-size: 0.7rem;
+        background: transparent;
+      }
+
+      .footer-note {
+        margin-top: 3.2rem;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #6c7f9b;
+        border-top: 1px solid #26303f;
+        padding-top: 1.8rem;
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+      }
+
+      .footer-note span {
+        background: #1a2331;
+        padding: 0.2rem 1.4rem;
+        border-radius: 60px;
+        border: 1px solid #2b384d;
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          padding: 1.8rem 1.2rem;
+        }
+        h1 {
+          font-size: 2rem;
+          gap: 0.3rem;
+        }
+        h1 span {
+          font-size: 1rem;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+          gap: 0.9rem;
+        }
+        .card {
+          padding: 1rem 1rem 1rem 1.2rem;
+          font-size: 1rem;
+        }
+        .card .emoji-big {
+          font-size: 1.8rem;
+          min-width: 2.2rem;
+        }
+      }
+
+      /* dodatni ukrasni detalji */
+      .icon-pulse {
+        display: inline-block;
+        animation: subtle-glow 3s infinite alternate;
+      }
+
+      @keyframes subtle-glow {
+        0% {
+          opacity: 0.7;
+          transform: scale(1);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1.02);
+        }
+      }
+
+      /* prilagodjenje za duge nazive */
+      .card .filename {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+      }
+
+      .card .filename code {
+        white-space: nowrap;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        🧯 Požarna bezbednost
+        <span>📋 centrala</span>
+      </h1>
+      <div class="subhead">
+        <div>🔥 pregled svih sekcija</div>
+        <div class="badge">
+          <span>📁</span>
+          10 dokumenata
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- 1 -->
+        <a href="00-zop.html" class="card">
+          <div class="emoji-big">📜</div>
+          <div class="info">
+            <div class="title">
+              ZOP
+              <span style="font-weight: 400; opacity: 0.7; font-size: 0.8rem">
+                🧾
+              </span>
+            </div>
+            <div class="filename"><code>00-zop.html</code></div>
+          </div>
+        </a>
+        <!-- 2 -->
+        <a href="01-normativno-uredjenje-zastite-od-pozara.html" class="card">
+          <div class="emoji-big">⚖️</div>
+          <div class="info">
+            <div class="title">
+              Propisi
+              <span style="font-weight: 400; opacity: 0.7; font-size: 0.8rem">
+                📘
+              </span>
+            </div>
+            <div class="filename">
+              <code>01-normativno-uredjenje-zastite-od-pozara.html</code>
+            </div>
+          </div>
+        </a>
+        <!-- 3 -->
+        <a href="02-opasne-materije-pozar-eksplozija.html" class="card">
+          <div class="emoji-big">🧪</div>
+          <div class="info">
+            <div class="title">
+              Opasne materije
+              <span style="font-weight: 400; opacity: 0.7; font-size: 0.8rem">
+                💥
+              </span>
+            </div>
+            <div class="filename">
+              <code>02-opasne-materije-pozar-eksplozija.html</code>
+            </div>
+          </div>
+        </a>
+        <!-- 4 -->
+        <a href="03-preventivna-zastita-od-pozara.html" class="card">
+          <div class="emoji-big">🛡️</div>
+          <div class="info">
+            <div class="title">
+              Preventiva
+              <span style="font-weight: 400; opacity: 0.7; font-size: 0.8rem">
+                🔍
+              </span>
+            </div>
+            <div class="filename">
+              <code>03-preventivna-zastita-od-pozara.html</code>
+            </div>
+          </div>
+        </a>
+        <!-- 5 -->
+        <a href="04-sredstva-za-gasenje-pozara.html" class="card">
+          <div class="emoji-big">🧯</div>
+          <div class="info">
+            <div class="title">
+              Sredstva za gašenje
+              <span style="font-weight: 400; opacity: 0.7; font-size: 0.8rem">
+                💧
+              </span>
+            </div>
+            <div class="filename">
+              <code>04-sredstva-za-gasenje-pozara.html</code>
+            </div>
+          </div>
+        </a>
+        <!-- 6 -->
+        <a href="05-vatrogasne-sprave-i-oprema.html" class="card">
+          <div class="emoji-big">🪣</div>
+          <div class="info">
+            <div class="title">
+              Oprema
+              <span style="font-weight: 400; opacity: 0.7; font-size: 0.8rem">
+                🧰
+              </span>
+            </div>
+            <div class="filename">
+              <code>05-vatrogasne-sprave-i-oprema.html</code>
+            </div>
+          </div>
+        </a>
+        <!-- 7 -->
+        <a href="06-taktika-gasenja-pozara.html" class="card">
+          <div class="emoji-big">⚔️</div>
+          <div class="info">
+            <div class="title">
+              Taktika gašenja
+              <span style="font-weight: 400; opacity: 0.7; font-size: 0.8rem">
+                🔥
+              </span>
+            </div>
+            <div class="filename">
+              <code>06-taktika-gasenja-pozara.html</code>
+            </div>
+          </div>
+        </a>
+        <!-- 8 -->
+        <a href="pozarna-bezbednost-tocilac.html" class="card">
+          <div class="emoji-big">🚒</div>
+          <div class="info">
+            <div class="title">
+              Tocilac ZOP
+              <span style="font-weight: 400; opacity: 0.7; font-size: 0.8rem">
+                🧑‍🚒
+              </span>
+            </div>
+            <div class="filename">
+              <code>pozarna-bezbednost-tocilac.html</code>
+            </div>
+          </div>
+        </a>
+        <!-- 9 -->
+        <a href="rucni-aparati-za-gasenje.html" class="card">
+          <div class="emoji-big">🧯</div>
+          <div class="info">
+            <div class="title">
+              Ručni aparati
+              <span style="font-weight: 400; opacity: 0.7; font-size: 0.8rem">
+                ✋
+              </span>
+            </div>
+            <div class="filename">
+              <code>rucni-aparati-za-gasenje.html</code>
+            </div>
+          </div>
+        </a>
+        <!-- 10 – NOVA KARTICA: Opšti akti -->
+        <a href="akti-zop.html" class="card">
+          <div class="emoji-big">📋</div>
+          <div class="info">
+            <div class="title">
+              Opšti akti
+              <span style="font-weight: 400; opacity: 0.7; font-size: 0.8rem">
+                🧾
+              </span>
+            </div>
+            <div class="filename">
+              <code>akti-zop.html</code>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="footer-note">
+        <span>🔗 svi linkovi vode ka stranama/sekcijama</span>
+        <span>🌙 dark mode + emoji</span>
+        <span>📂 index.html — centralna strana</span>
+      </div>
+    </div>
+  </body>
+</html>

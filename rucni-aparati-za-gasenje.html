@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ručni aparati - Pregled za ispit</title>
+    <style>
+      body {
+        background-color: #0d1117;
+        color: #e6edf3;
+        font-family:
+          "Segoe UI",
+          -apple-system,
+          sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        color: #f0883e;
+        border-bottom: 2px solid #f0883e;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        font-size: 2.2rem;
+      }
+      h2 {
+        color: #58a6ff;
+        border-left: 4px solid #f0883e;
+        padding-left: 12px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 1.6rem;
+      }
+      h3 {
+        color: #f0883e;
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .card {
+        background-color: #161b22;
+        border: 1px solid #30363d;
+        border-radius: 10px;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+      }
+      .card p {
+        margin: 5px 0;
+      }
+      .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+      @media (max-width: 700px) {
+        .grid-2 {
+          grid-template-columns: 1fr;
+        }
+      }
+      .badge {
+        display: inline-block;
+        background-color: #21262d;
+        padding: 2px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        border: 1px solid #30363d;
+      }
+      .emoji-big {
+        font-size: 1.8rem;
+        margin-right: 5px;
+      }
+      ul {
+        padding-left: 20px;
+        list-style-type: "🔹 ";
+      }
+      ul li {
+        margin-bottom: 5px;
+      }
+      .highlight {
+        color: #f0883e;
+        font-weight: bold;
+      }
+      .warning {
+        background-color: #2d1b1b;
+        border-left: 4px solid #f85149;
+        padding: 8px 15px;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+      .success {
+        background-color: #1b2d1b;
+        border-left: 4px solid #3fb950;
+        padding: 8px 15px;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+      .tag {
+        background-color: #1f2937;
+        border-radius: 4px;
+        padding: 0 8px;
+        font-size: 0.85rem;
+        color: #b1bac4;
+      }
+      hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, #30363d, #f0883e, #30363d);
+        margin: 25px 0;
+      }
+      footer {
+        text-align: center;
+        margin-top: 30px;
+        color: #8b949e;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🧯 RUČNI APARATI ZA GAŠENJE</h1>
+
+    <div class="card">
+      <p>
+        <span class="emoji-big">📌</span>
+        <strong>Šta je ručni aparat?</strong>
+        Naprava koja izbacuje sredstvo za gašenje pomoću potisne sile. Služi za
+        <span class="highlight">početno gašenje</span>
+        požara.
+      </p>
+      <p>
+        <span class="emoji-big">⚖️</span>
+        <strong>Težina:</strong>
+        Do
+        <strong>20 kg</strong>
+        u napunjenom stanju.
+      </p>
+      <p>
+        <span class="emoji-big">⏱️</span>
+        <strong>Vreme aktiviranja:</strong>
+        Do
+        <strong>5 sekundi</strong>
+        .
+      </p>
+      <p>
+        <span class="emoji-big">🎨</span>
+        <strong>Boja:</strong>
+        Svi aparati su
+        <span class="highlight">crvene boje</span>
+        .
+      </p>
+    </div>
+
+    <!-- PODELA APARATA -->
+    <h2>📂 Podela aparata</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>💧 Prema sredstvu za gašenje</h3>
+        <ul>
+          <li>
+            <strong>Voda (V)</strong>
+            – za čvrste materije (klasa A)
+          </li>
+          <li>
+            <strong>Vazdušna pena (P)</strong>
+            – za tečnosti (klasa B)
+          </li>
+          <li>
+            <strong>Prah (S, S-A)</strong>
+            – univerzalno, gaši A, B, C, D, E
+          </li>
+          <li>
+            <strong>CO₂</strong>
+            – za gasove, tečnosti i elektro uređaje
+          </li>
+          <li>
+            <strong>Haloni (HL)</strong>
+            – za osetljivu elektroniku, vredne stvari
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>⚙️ Prema načinu izbacivanja</h3>
+        <ul>
+          <li>💥 Hemijskom reakcijom</li>
+          <li>💨 Inertnim gasom iz boce</li>
+          <li>🫧 Inertnim gasom u rezervoaru</li>
+          <li>🔄 Ručnom pumpom (brntača)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- TABELA SA VRSTAMA -->
+    <h2>📊 Pregled ručnih aparata</h2>
+    <div class="card">
+      <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem">
+        <thead style="background-color: #21262d">
+          <tr>
+            <th style="padding: 8px; border: 1px solid #30363d">Tip</th>
+            <th style="padding: 8px; border: 1px solid #30363d">Sredstvo</th>
+            <th style="padding: 8px; border: 1px solid #30363d">Klase</th>
+            <th style="padding: 8px; border: 1px solid #30363d">Domet</th>
+            <th style="padding: 8px; border: 1px solid #30363d">Vreme (s)</th>
+            <th style="padding: 8px; border: 1px solid #30363d">Napon</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding: 8px; border: 1px solid #30363d">S-1 do S-12</td>
+            <td style="padding: 8px; border: 1px solid #30363d">Prah</td>
+            <td style="padding: 8px; border: 1px solid #30363d">A, B, C, D</td>
+            <td style="padding: 8px; border: 1px solid #30363d">4 – 8 m</td>
+            <td style="padding: 8px; border: 1px solid #30363d">6 – 20</td>
+            <td style="padding: 8px; border: 1px solid #30363d">do 1000 V</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; border: 1px solid #30363d">
+              CO₂-3, CO₂-5
+            </td>
+            <td style="padding: 8px; border: 1px solid #30363d">CO₂</td>
+            <td style="padding: 8px; border: 1px solid #30363d">B, C, E</td>
+            <td style="padding: 8px; border: 1px solid #30363d">~ 4 m</td>
+            <td style="padding: 8px; border: 1px solid #30363d">14 – 15</td>
+            <td style="padding: 8px; border: 1px solid #30363d">do 10.000 V</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; border: 1px solid #30363d">HL</td>
+            <td style="padding: 8px; border: 1px solid #30363d">Haloni</td>
+            <td style="padding: 8px; border: 1px solid #30363d">B, C, E</td>
+            <td style="padding: 8px; border: 1px solid #30363d">~ 6 m</td>
+            <td style="padding: 8px; border: 1px solid #30363d">8 – 10</td>
+            <td style="padding: 8px; border: 1px solid #30363d">do 30.000 V</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; border: 1px solid #30363d">
+              VP (brntača)
+            </td>
+            <td style="padding: 8px; border: 1px solid #30363d">Voda / Pena</td>
+            <td style="padding: 8px; border: 1px solid #30363d">A, B</td>
+            <td style="padding: 8px; border: 1px solid #30363d">-</td>
+            <td style="padding: 8px; border: 1px solid #30363d">Neprekidno</td>
+            <td style="padding: 8px; border: 1px solid #30363d">NE</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- AKTIVIRANJE -->
+    <h2>🚀 Kako aktivirati ručni aparat?</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>🟡 Stari tip S (sa patronom)</h3>
+        <ol style="padding-left: 20px">
+          <li>Izvuci osigurač</li>
+          <li>Pritisni ručicu (probuši se membrana CO₂)</li>
+          <li>
+            Pusti ručicu i
+            <span class="highlight">sačekaj 5–10 sekundi</span>
+            (da se stvori pritisak)
+          </li>
+          <li>Usmeri mlaznicu prema vatri</li>
+          <li>
+            <span class="highlight">PONOVO</span>
+            pritisni ručicu i gasi
+          </li>
+        </ol>
+        <p class="warning">⚠️ Obavezno sačekaj! Bez toga nema pritiska.</p>
+      </div>
+      <div class="card">
+        <h3>🟢 Novi tip S (pod stalnim pritiskom)</h3>
+        <ol style="padding-left: 20px">
+          <li>Skini aparat sa nosača</li>
+          <li>Izvuci osigurač</li>
+          <li>Usmeri mlaznicu u podnožje plamena</li>
+          <li>
+            <span class="highlight">Pritisni ručicu</span>
+            i gasi
+          </li>
+        </ol>
+        <p class="success">✅ Jednostavno – pritisak je već u aparatu.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>🧯 CO₂ aparat</h3>
+      <ul>
+        <li><strong>Izvuci osigurač → pritisni ručicu ventila</strong></li>
+        <li>
+          Opruga sabije vreteno, otvara se prolaz i CO₂ izlazi kroz mlaznicu.
+        </li>
+        <li class="warning">
+          ⚠️
+          <strong>Oprez:</strong>
+          Na mlaznici je temperatura
+          <strong>-10°C</strong>
+          ! (opasnost od promrzlina)
+        </li>
+      </ul>
+    </div>
+
+    <!-- ODRŽAVANJE -->
+    <h2>🛠️ Održavanje i kontrola</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h3>📅 Periodične kontrole</h3>
+        <ul>
+          <li>
+            <strong>Svaki mesec:</strong>
+            Vizuelni pregled
+          </li>
+          <li>
+            <strong>Svakih 6 meseci:</strong>
+            <br />
+            Kvalitet praha (nije se zgrudvao), težina CO₂ boce
+          </li>
+          <li>
+            <strong>Svake 2 godine:</strong>
+            <br />
+            Hidrotest posude na
+            <span class="highlight">18 bar</span>
+          </li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🔍 Šta se proverava?</h3>
+        <ul>
+          <li>Mehanička oštećenja</li>
+          <li>Zgrudvanost praha</li>
+          <li>Sadržaj i pritisak pogonskog gasa</li>
+          <li>Ispravnost ventila i mlaznice</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OZNAKE -->
+    <h2>🏷️ Obavezne oznake na aparatu</h2>
+    <div class="card">
+      <ul>
+        <li>
+          <strong>🆔</strong>
+          Fabrički broj i godina proizvodnje
+        </li>
+        <li>
+          <strong>⏳</strong>
+          Vreme neprekidnog pražnjenja
+        </li>
+        <li>
+          <strong>🔥</strong>
+          Klase požara za koje je namenjen
+        </li>
+        <li>
+          <strong>⚡</strong>
+          Maksimalni napon za gašenje (ako je primenljivo)
+        </li>
+        <li>
+          <strong>🌡️</strong>
+          Temperaturni opseg upotrebe
+        </li>
+        <li>
+          <strong>📖</strong>
+          Uputstvo za upotrebu (sa slikama)
+        </li>
+      </ul>
+    </div>
+
+    <hr />
+    <footer>
+      📚 Na osnovu skripte "Vatrogasne sprave i oprema" – predmet 4
+      <br />
+      ⭐ Učenje za ispit – ključne i fundamentalne stvari.
+    </footer>
+  </body>
+</html>

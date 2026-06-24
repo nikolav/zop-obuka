@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📘 Normativno uređenje ZOP - Sažetak</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #0b0f1a;
+        color: #e4e9f2;
+        font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        line-height: 1.5;
+      }
+
+      .container {
+        max-width: 1100px;
+        width: 100%;
+        background: #141a26;
+        padding: 2rem 2rem 2.5rem;
+        border-radius: 32px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+        border: 1px solid #2a3442;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        background: linear-gradient(145deg, #f0c27f, #fc5c7d);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 0.25rem;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+
+      .subhead {
+        color: #94a3b8;
+        border-left: 4px solid #fc5c7d;
+        padding-left: 16px;
+        margin-bottom: 2rem;
+        font-weight: 300;
+        font-size: 1.05rem;
+      }
+
+      .grid-2col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem 2rem;
+      }
+
+      @media (max-width: 720px) {
+        .grid-2col {
+          grid-template-columns: 1fr;
+          gap: 1.2rem;
+        }
+        .container {
+          padding: 1.5rem;
+        }
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+
+      .section-card {
+        background: #1e2636;
+        border-radius: 20px;
+        padding: 1.25rem 1.5rem;
+        border-left: 5px solid #fc5c7d;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        transition: 0.15s;
+      }
+
+      .section-card:hover {
+        background: #242e40;
+        border-left-color: #f0c27f;
+      }
+
+      .section-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.9rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #facc15;
+        border-bottom: 1px dashed #3a4860;
+        padding-bottom: 8px;
+      }
+
+      .section-title span {
+        color: #e4e9f2;
+        font-weight: 400;
+      }
+
+      ul,
+      .p-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      ul li,
+      .p-list li {
+        margin-bottom: 0.55rem;
+        padding-left: 1.5rem;
+        position: relative;
+        font-size: 0.95rem;
+      }
+
+      ul li::before {
+        content: "▹";
+        color: #facc15;
+        position: absolute;
+        left: 0;
+        font-weight: 700;
+      }
+
+      .badge {
+        display: inline-block;
+        background: #2a3a4a;
+        padding: 0.2rem 0.7rem;
+        border-radius: 40px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #b9c7db;
+        letter-spacing: 0.3px;
+        margin-right: 6px;
+      }
+
+      .tag {
+        background: #2c3e50;
+        border-radius: 30px;
+        padding: 0.15rem 0.75rem;
+        font-size: 0.8rem;
+        color: #d1dbe9;
+        display: inline-block;
+        margin: 0.2rem 0.15rem;
+      }
+
+      .highlight-box {
+        background: #10161f;
+        border-radius: 18px;
+        padding: 1rem 1.3rem;
+        margin: 0.5rem 0 0.8rem 0;
+        border: 1px solid #2e3d54;
+      }
+
+      .emoji-big {
+        font-size: 1.5rem;
+        margin-right: 6px;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #2e3d54;
+        margin: 1.2rem 0;
+      }
+
+      .footer-note {
+        margin-top: 2.2rem;
+        padding-top: 1rem;
+        border-top: 1px solid #253040;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #7f8fa4;
+        letter-spacing: 0.3px;
+      }
+
+      .footer-note strong {
+        color: #facc15;
+      }
+
+      .inline-code {
+        background: #1e293b;
+        padding: 0.1rem 0.5rem;
+        border-radius: 30px;
+        font-family: monospace;
+        font-size: 0.85rem;
+        color: #b9d0f0;
+      }
+
+      .two-col-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.3rem 0.8rem;
+        margin: 0.3rem 0;
+      }
+
+      .two-col-list .tag {
+        flex: 0 1 auto;
+      }
+
+      .kategorije-tabela {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.9rem;
+        margin: 0.5rem 0;
+      }
+
+      .kategorije-tabela td,
+      .kategorije-tabela th {
+        padding: 0.5rem 0.6rem;
+        border-bottom: 1px solid #2e3f54;
+      }
+
+      .kategorije-tabela th {
+        text-align: left;
+        font-weight: 600;
+        color: #facc15;
+      }
+
+      .kategorije-tabela tr:last-child td {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🧯 Normativno uređenje ZOP</h1>
+      <div class="subhead">
+        📌 Sažetak – ključne tačke za stručni ispit · na osnovu skripte i
+        pitanja
+      </div>
+
+      <!-- 1. red: zakoni, načela, sistem -->
+      <div class="grid-2col">
+        <!-- leva kolona -->
+        <div>
+          <div class="section-card">
+            <div class="section-title">📜 Zakoni & podzakonski akti</div>
+            <ul>
+              <li>
+                <span class="badge">🔑</span>
+                <strong>Zakon o zaštiti od požara</strong>
+                (2009, izmene 2015/18)
+              </li>
+              <li>
+                <span class="badge">📎</span>
+                Zakon o eksplozivnim materijama, zapaljivim tečnostima i
+                gasovima
+              </li>
+              <li>
+                <span class="badge">📎</span>
+                Zakon o dobrovoljnom vatrogastvu (2018)
+              </li>
+              <li>
+                <span class="badge">📎</span>
+                Zakon o smanjenju rizika od katastrofa
+              </li>
+              <li>
+                <span class="badge">📎</span>
+                Zakon o opštem upravnom postupku, Zakon o policiji
+              </li>
+              <li>
+                <span class="badge">📄</span>
+                Uredba o kategorizaciji, Pravilnik o planu ZOP, Pravilnik o
+                obuci, Pravilnik o organizovanju ZOP …
+              </li>
+            </ul>
+            <div
+              style="
+                margin-top: 0.5rem;
+                font-size: 0.9rem;
+                background: #10161f;
+                border-radius: 40px;
+                padding: 0.2rem 0.8rem;
+                display: inline-block;
+              "
+            >
+              📌 Podzakonski akti: Vlada RS / ministar MUP
+            </div>
+          </div>
+
+          <div class="section-card">
+            <div class="section-title">⚖️ Načela ZOP</div>
+            <ul>
+              <li>
+                <span class="emoji-big">🛡️</span>
+                <strong>Zaštite</strong>
+                – život, zdravlje, dobra, sredina
+              </li>
+              <li>
+                <span class="emoji-big">🚫</span>
+                <strong>Prevencije</strong>
+                – sprečavanje požara, smanjenje rizika
+              </li>
+              <li>
+                <span class="emoji-big">🔄</span>
+                <strong>Stalnosti</strong>
+                – neprekidno sprovođenje
+              </li>
+              <li>
+                <span class="emoji-big">🧠</span>
+                <strong>Jačanja svesti</strong>
+                – edukacija, informisanje
+              </li>
+              <li>
+                <span class="emoji-big">📢</span>
+                <strong>Javnosti</strong>
+                – obaveštavanje javnosti
+              </li>
+              <li>
+                <span class="emoji-big">🤝</span>
+                <strong>Saradnje, solidarnosti, odgovornosti</strong>
+              </li>
+            </ul>
+          </div>
+
+          <div class="section-card">
+            <div class="section-title">👥 Subjekti ZOP</div>
+            <ul>
+              <li>
+                <span class="badge">🏛️</span>
+                Republika Srbija (Strategija na 5 god.)
+              </li>
+              <li>
+                <span class="badge">🏙️</span>
+                Autonomna pokrajina, lokalna samouprava
+              </li>
+              <li>
+                <span class="badge">🏢</span>
+                Pravna lica (zavisno od kategorije)
+              </li>
+              <li>
+                <span class="badge">🧑‍🤝‍🧑</span>
+                Fizička lica – dužnost prijave požara, gašenja ako mogu bezbedno
+              </li>
+            </ul>
+            <div
+              style="
+                background: #10161f;
+                border-radius: 16px;
+                padding: 0.5rem 1rem;
+                margin-top: 0.6rem;
+              "
+            >
+              <span style="color: #facc15">🧑‍🚒 Građanin:</span>
+              uklanja opasnost, gasi požar, prijavljuje –
+              <strong>lažna prijava zabranjena</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- desna kolona -->
+        <div>
+          <div class="section-card">
+            <div class="section-title">🏷️ Kategorije ugroženosti</div>
+            <table class="kategorije-tabela">
+              <tr>
+                <th>Kategorija</th>
+                <th>Rizik</th>
+                <th>Osnovne obaveze</th>
+              </tr>
+              <tr>
+                <td>
+                  <span class="badge" style="background: #b91c1c">I</span>
+                </td>
+                <td>visok</td>
+                <td>vatrogasna jedinica (18–42), plan ZOP, dežurstvo</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="badge" style="background: #b45309">II</span>
+                </td>
+                <td>povećan</td>
+                <td>služba ZOP (≥1 lice), plan ZOP, dežurstvo</td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="badge" style="background: #2d7a3a">III</span>
+                </td>
+                <td>izvestan</td>
+                <td>referent ZOP, oprema, plan evakuacije</td>
+              </tr>
+            </table>
+            <div
+              style="
+                margin-top: 0.5rem;
+                background: #10161f;
+                border-radius: 20px;
+                padding: 0.3rem 1rem;
+                font-size: 0.9rem;
+              "
+            >
+              🔍
+              <strong>Kategorizaciju vrši MUP</strong>
+              (rešenjem) – izuzev vojnih objekata (MO)
+            </div>
+            <div style="margin-top: 0.3rem; font-size: 0.9rem">
+              <span class="tag">
+                📐 kriterijumi: tehnološki proces, materijal, značaj, biljni
+                pokrivač…
+              </span>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <div class="section-title">📋 Opšti akti u pravnom licu</div>
+            <ul>
+              <li>
+                <span class="badge">📄</span>
+                <strong>Plan ZOP</strong>
+                – I i II kat. (7 tačaka + evakuacija)
+              </li>
+              <li>
+                <span class="badge">📄</span>
+                <strong>Plan evakuacije</strong>
+                – I, II, III kat. (istaknut na vidnom mestu)
+              </li>
+              <li>
+                <span class="badge">📄</span>
+                <strong>Pravila ZOP</strong>
+                – III kat., stambene zgrade
+              </li>
+              <li>
+                <span class="badge">📄</span>
+                <strong>Program osnovne obuke</strong>
+                – svi poslodavci, saglasnost MUP
+              </li>
+            </ul>
+            <div
+              style="
+                background: #10161f;
+                border-radius: 14px;
+                padding: 0.3rem 0.8rem;
+                margin-top: 0.5rem;
+              "
+            >
+              📌 Procena ugroženosti – najvažniji deo plana
+            </div>
+          </div>
+
+          <div class="section-card">
+            <div class="section-title">🎓 Obuke i uslovi</div>
+            <ul>
+              <li>
+                <span class="badge">🟢</span>
+                <strong>Osnovna obuka</strong>
+                – svi zaposleni, u roku 30 dana, provera svake 3 godine
+              </li>
+              <li>
+                <span class="badge">🔵</span>
+                <strong>Posebna obuka</strong>
+                – za lica na poslovima ZOP (rok 1 god.)
+                <br />
+                <span style="font-size: 0.85rem; color: #b9c7db">
+                  Opšti + specijalistički + praktični (za SSS)
+                </span>
+              </li>
+              <li>
+                <span class="badge">📛</span>
+                <strong>Licenca za glavni projekat</strong>
+                : VSS tehnički smer + 5 god. iskustva + stručni ispit
+              </li>
+              <li>
+                <span class="badge">👨‍🔧</span>
+                Rukovodilac I kat. – VSS; rukovodilac VJ – viša; vatrogasci –
+                SSS
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- drugi red: preventiva, inspekcija, vatrogasne jedinice, ovlašćenja -->
+      <div style="margin-top: 1.8rem">
+        <div class="grid-2col">
+          <div class="section-card">
+            <div class="section-title">🔥 Preventiva & mere u prirodi</div>
+            <ul>
+              <li>
+                <span class="emoji-big">⛔</span>
+                Zabranjeno loženje vatre u šumi i na 200m od ruba
+              </li>
+              <li>
+                <span class="emoji-big">🚜</span>
+                Žetva – dežurstvo, osmatranje, oprema, kontrola
+              </li>
+              <li>
+                <span class="emoji-big">🧯</span>
+                Zapaljivi materijal najmanje 6m od objekta
+              </li>
+              <li>
+                <span class="emoji-big">🔥</span>
+                Zabranjeno spaljivanje strnih useva, smeća, biljnih ostataka
+              </li>
+            </ul>
+            <div
+              style="
+                margin-top: 0.6rem;
+                background: #10161f;
+                border-radius: 40px;
+                padding: 0.2rem 1rem;
+              "
+            >
+              <span class="emoji-big">🧑‍🚒</span>
+              <strong>Protivpožarna straža</strong>
+              – pretakanje >5m³, zavarivanje van prilagođenih prostora, javni
+              skupovi, žetva…
+            </div>
+          </div>
+
+          <div class="section-card">
+            <div class="section-title">👨‍🚒 Vatrogasne jedinice</div>
+            <ul>
+              <li>
+                <span class="badge">🏢</span>
+                Profesionalne: MUP, MO, lokalne samouprave, pravna lica I kat.
+              </li>
+              <li>
+                <span class="badge">❤️</span>
+                Dobrovoljne (DVD) – osnivači ≥3, dobrovoljna, neprofitna
+              </li>
+              <li>
+                <span class="badge">📅</span>
+                Pripadnik DVD: 18–55 god.
+              </li>
+              <li>
+                <span class="badge">📅</span>
+                Pripadnik MUP: 19–30 god. + godinu dana prebivališta
+              </li>
+            </ul>
+            <div
+              style="
+                font-size: 0.9rem;
+                background: #10161f;
+                border-radius: 16px;
+                padding: 0.3rem 0.8rem;
+                margin-top: 0.4rem;
+              "
+            >
+              ⚖️ Prava pripadnika zavise od osnivača (policijski propisi,
+              odbrana, lokalna samouprava, opšti radni odnosi)
+            </div>
+          </div>
+
+          <div class="section-card">
+            <div class="section-title">🔎 Nadzor – inspekcijski pregledi</div>
+            <ul>
+              <li>
+                <span class="badge">📌</span>
+                <strong>Osnovni</strong>
+                – prvi pregled (kategorizacija)
+              </li>
+              <li>
+                <span class="badge">📌</span>
+                <strong>Redovni</strong>
+                – I kat. 1x godišnje; II kat. 1x u 2 god.
+              </li>
+              <li>
+                <span class="badge">📌</span>
+                <strong>Vanredni</strong>
+                – hitne mere, prijave, naređenja
+              </li>
+              <li>
+                <span class="badge">📌</span>
+                <strong>Kontrolni</strong>
+                – provera izvršenja naloženih mera
+              </li>
+            </ul>
+            <div
+              style="
+                background: #10161f;
+                border-radius: 40px;
+                padding: 0.15rem 0.8rem;
+                display: inline-block;
+                margin-top: 0.3rem;
+              "
+            >
+              🖊️ Zapisnik + predlog mera (rok 5 dana za primedbe) → rešenje
+            </div>
+          </div>
+
+          <div class="section-card">
+            <div class="section-title">
+              ⚡ Ovlašćenja (rukovodilac akcije / inspektor)
+            </div>
+            <ul>
+              <li>
+                <span class="emoji-big">🚧</span>
+                Zabrana pristupa, obustava saobraćaja
+              </li>
+              <li>
+                <span class="emoji-big">🏃</span>
+                Naređenje evakuacije, prekid struje/gasa/goriva
+              </li>
+              <li>
+                <span class="emoji-big">🔧</span>
+                Upotreba tuđih sredstava, vozila, rušenje objekata (ako je
+                neophodno)
+              </li>
+              <li>
+                <span class="emoji-big">🔑</span>
+                Nasilno otvaranje zaključanih prostorija
+              </li>
+              <li>
+                <span class="emoji-big">🧾</span>
+                Inspektor: uvid u dokumentaciju, pregled objekata, zabrane,
+                nalaže mere
+              </li>
+            </ul>
+            <div
+              style="
+                font-size: 0.85rem;
+                background: #10161f;
+                border-radius: 20px;
+                padding: 0.2rem 0.8rem;
+                margin-top: 0.4rem;
+                border-left: 3px solid #facc15;
+              "
+            >
+              ⏳ Ovlašćenja rukovodioca –
+              <strong>samo u toku akcije gašenja</strong>
+              !
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- treći red: dodatni važni elementi -->
+      <div style="margin-top: 1.8rem">
+        <div class="grid-2col">
+          <div class="section-card">
+            <div class="section-title">📐 Glavni projekat ZOP</div>
+            <ul>
+              <li>
+                <span class="badge">📋</span>
+                tehnički izveštaj, proračunske osnove, grafička dokumentacija,
+                predmer
+              </li>
+              <li>
+                <span class="badge">📋</span>
+                izrađuje pravno lice sa ovlašćenjem MUP
+              </li>
+              <li>
+                <span class="badge">📋</span>
+                licenca: VSS tehnički + 5 god. iskustva + ispit
+              </li>
+            </ul>
+            <div
+              style="
+                margin-top: 0.5rem;
+                background: #10161f;
+                border-radius: 16px;
+                padding: 0.3rem 0.8rem;
+              "
+            >
+              🧩 Posebni sistemi: stabilni sistemi za gašenje, dojavu, detekciju
+              gasova, odvođenje dima…
+            </div>
+          </div>
+
+          <div class="section-card">
+            <div class="section-title">
+              📅 Prostorni planovi & operativne karte
+            </div>
+            <ul>
+              <li>
+                <span class="emoji-big">🗺️</span>
+                Prostorni/urbanistički plan – obavezno mišljenje MUP
+              </li>
+              <li>
+                <span class="emoji-big">🗺️</span>
+                Sadrži: vodosnabdevanje, pristupne puteve, sigurnosne pojaseve,
+                evakuaciju
+              </li>
+              <li>
+                <span class="emoji-big">🗺️</span>
+                <strong>Operativne karte</strong>
+                – MUP izrađuje za I i II kat., subjekti dužni da pruže podatke
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- skraćeni upravni postupak + evidencije -->
+      <div style="margin-top: 1.8rem">
+        <div class="section-card" style="border-left-color: #facc15">
+          <div class="section-title">
+            📂 Skraćeni upravni postupak & evidencije
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.8rem 1.8rem">
+            <div style="flex: 1; min-width: 200px">
+              <ul>
+                <li>
+                  <span class="badge">⚡</span>
+                  Pokreće se po službenoj dužnosti ili zahtevu
+                </li>
+                <li>
+                  <span class="badge">⚡</span>
+                  Faze: pokretanje → ispitni → usmena rasprava (opc.) →
+                  odlučivanje
+                </li>
+                <li>
+                  <span class="badge">⚡</span>
+                  Skraćeni postupak – kad su činjenice verovatne / hitne mere
+                </li>
+              </ul>
+            </div>
+            <div style="flex: 1; min-width: 180px">
+              <ul>
+                <li>
+                  <span class="badge">📂</span>
+                  Evidencije: obuka, pregledi, servisi, oprema…
+                </li>
+                <li>
+                  <span class="badge">📂</span>
+                  Zapisnik – obavezan, sadrži tok, izjave, predlog mera
+                </li>
+                <li>
+                  <span class="badge">📂</span>
+                  Rok za žalbu i postupanje po žalbi – prema ZOUP
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <div class="footer-note">
+        📘
+        <strong>Normativno uređenje zaštite od požara</strong>
+        · sažetak za stručni ispit · na osnovu skripte Lj. Popadića
+        <br />
+        ✅ ključne tačke: zakoni, kategorije, opšti akti, obuke, nadzor,
+        ovlašćenja, preventiva
+      </div>
+    </div>
+  </body>
+</html>

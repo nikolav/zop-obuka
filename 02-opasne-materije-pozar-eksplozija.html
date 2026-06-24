@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📘 Optimizovani pregled – Opasne materije, požar i eksplozija</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #0f1117;
+        color: #e8edf5;
+        font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        max-width: 1100px;
+        width: 100%;
+        background: #181c26;
+        border-radius: 28px;
+        padding: 2rem 2.2rem;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+        border: 1px solid #2e3545;
+        transition: all 0.2s;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: -0.5px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border-bottom: 2px solid #3b445a;
+        padding-bottom: 0.6rem;
+        margin-bottom: 1.8rem;
+        color: #f0f4fe;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 1.8rem;
+        margin-bottom: 0.8rem;
+        padding-left: 6px;
+        border-left: 6px solid #f5b042;
+        padding-left: 14px;
+        color: #ffd78a;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 1.4rem 0 0.6rem 0;
+        color: #b6c8f0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .card-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 14px 0 10px 0;
+      }
+
+      .badge {
+        background: #25303f;
+        padding: 6px 16px 6px 12px;
+        border-radius: 40px;
+        font-size: 0.9rem;
+        border: 1px solid #3a455a;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #d6e0f0;
+      }
+
+      .table-wrap {
+        overflow-x: auto;
+        margin: 14px 0 16px 0;
+        border-radius: 16px;
+        border: 1px solid #2b3346;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #1b212e;
+        font-size: 0.9rem;
+      }
+
+      th {
+        background: #283141;
+        color: #f2e8d0;
+        font-weight: 600;
+        padding: 12px 10px;
+        text-align: left;
+        border-bottom: 2px solid #3c475e;
+      }
+
+      td {
+        padding: 10px 10px;
+        border-bottom: 1px solid #2b3447;
+        vertical-align: top;
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      .highlight {
+        background: #28344a;
+        border-radius: 30px;
+        padding: 2px 12px;
+        font-weight: 500;
+        color: #ffd966;
+      }
+
+      .danger {
+        background: #3d1f28;
+        color: #ffa7b5;
+        border-radius: 30px;
+        padding: 2px 14px;
+        font-weight: 600;
+        border: 1px solid #a03a4a;
+      }
+
+      .note {
+        background: #1e293b;
+        padding: 14px 18px;
+        border-radius: 18px;
+        border-left: 6px solid #ffb347;
+        margin: 16px 0 10px 0;
+        font-size: 0.95rem;
+      }
+
+      .flex-icon {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      hr {
+        margin: 24px 0 10px 0;
+        border: 0;
+        height: 1px;
+        background: linear-gradient(90deg, #2d364b, #5d6a86, #2d364b);
+      }
+
+      .row-2col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 10px 0;
+      }
+
+      .col-card {
+        background: #1c2332;
+        padding: 14px 16px;
+        border-radius: 18px;
+        border: 1px solid #2e384e;
+      }
+
+      @media (max-width: 700px) {
+        .container {
+          padding: 1.2rem;
+        }
+        h1 {
+          font-size: 1.7rem;
+        }
+        .row-2col {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .emoji-big {
+        font-size: 1.3rem;
+        line-height: 1.2;
+      }
+
+      .list-bullet {
+        list-style: none;
+        padding-left: 6px;
+      }
+      .list-bullet li {
+        padding: 4px 0 4px 28px;
+        background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="%23f5b342" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>')
+          left center no-repeat;
+        background-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🧯 Opasne materije, požar i eksplozija · optimizovani pregled</h1>
+
+      <!-- 1. OPASNE MATERIJE -->
+      <h2>📦 1. Opasne materije (ADR klasifikacija)</h2>
+      <p style="margin-bottom: 12px">
+        <span class="badge">📌 Definicija</span>
+        Supstance koje svojim osobinama (zapaljivost, eksplozivnost, toksičnost,
+        reaktivnost, radioaktivnost) ugrožavaju život, imovinu i okolinu. Kada
+        se prevoze →
+        <strong>opasna roba</strong>
+        .
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Klasa</th>
+              <th>Naziv / karakteristike</th>
+              <th>Primeri</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>💥 Eksplozivne (1.1–1.6)</td>
+              <td>Municija, dinamit</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>🧪 Gasovi: 2.1 zapaljivi · 2.2 nezapaljivi · 2.3 otrovni</td>
+              <td>Propan, kiseonik, hlor</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>🔥 Zapaljive tečnosti (vp &lt;3 bar na 50°C)</td>
+              <td>Benzin, aceton, dizel</td>
+            </tr>
+            <tr>
+              <td>4.1</td>
+              <td>🧱 Zapaljive čvrste materije</td>
+              <td>Sumpor, crveni fosfor</td>
+            </tr>
+            <tr>
+              <td>4.2</td>
+              <td>♨️ Samozapaljive</td>
+              <td>Beli fosfor, uljane krpe</td>
+            </tr>
+            <tr>
+              <td>4.3</td>
+              <td>💧 S vodom razvijaju zapaljive gasove</td>
+              <td>Natrijum, kalcijum-karbid</td>
+            </tr>
+            <tr>
+              <td>5.1</td>
+              <td>🧨 Oksidirajuće (bogate kiseonikom)</td>
+              <td>Vodik-peroksid, nitrati</td>
+            </tr>
+            <tr>
+              <td>5.2</td>
+              <td>🧬 Organski peroksidi (–O–O–)</td>
+              <td>Sredstva za polimerizaciju</td>
+            </tr>
+            <tr>
+              <td>6.1</td>
+              <td>☠️ Otrovne materije</td>
+              <td>Fenol, cijanidi</td>
+            </tr>
+            <tr>
+              <td>6.2</td>
+              <td>🦠 Zarazne materije</td>
+              <td>Biološki otpad</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>☢️ Radioaktivne (3 kategorije)</td>
+              <td>Uranijum, torijum</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>🧪 Korozivne (nagrizajuće)</td>
+              <td>Sumporna kiselina, NaOH</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>📦 Razne opasne materije</td>
+              <td>Azbest, litijumske baterije</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px">
+        <span class="badge">🟧 Narandžasta tabla</span>
+        <span class="badge">
+          🔢 Kemlerov kod (gornji broj) – klasa + vrsta opasnosti
+        </span>
+        <span class="badge">
+          🆔 UN broj (donji broj) – 4-cifreni identifikator
+        </span>
+        <span class="badge danger">❌ X ispred = ZABRANA VODE</span>
+      </div>
+
+      <hr />
+
+      <!-- 2. PROCESI GORENJA -->
+      <h2>🔥 2. Procesi gorenja</h2>
+      <div class="row-2col">
+        <div class="col-card">
+          <div style="font-size: 1.1rem; font-weight: 600">
+            🔺 Trougao gorenja
+          </div>
+          <ul class="list-bullet" style="margin-top: 6px">
+            <li>🧯 Goriva materija (čvrsta, tečna, gasovita)</li>
+            <li>💨 Kiseonik (&gt;15% u vazduhu)</li>
+            <li>⚡ Izvor paljenja (toplota, plamen, varnica)</li>
+          </ul>
+        </div>
+        <div class="col-card">
+          <div style="font-weight: 600">🌡️ Temperaturne karakteristike</div>
+          <ul class="list-bullet">
+            <li>
+              <strong>Tačka paljenja (plamište)</strong>
+              – najniža T na kojoj tečnost daje pare, ali
+              <strong>prestaje da gori</strong>
+              kad se izvor ukloni.
+            </li>
+            <li>
+              <strong>🔥 Temperatura samopaljenja</strong>
+              – T na kojoj materija gori
+              <strong>bez spoljnog izvora</strong>
+              .
+            </li>
+            <li>
+              <strong>💧 Tačka ključanja</strong>
+              – T na kojoj napon pare dostiže 1,013 bar.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        style="
+          background: #1b2335;
+          padding: 10px 16px;
+          border-radius: 16px;
+          margin: 10px 0;
+        "
+      >
+        <span style="font-weight: 600">⬆️ Potpuno gorenje</span>
+        (dovoljno O₂) → CO₂ + H₂O &nbsp;|&nbsp;
+        <span style="font-weight: 600">⬇️ Nepotpuno gorenje</span>
+        (manjak O₂) →
+        <span
+          class="danger"
+          style="background: transparent; border: 1px solid #b34a5a"
+        >
+          CO (ugljen-monoksid)
+        </span>
+        , čađ, toksični gasovi
+      </div>
+
+      <div class="note">
+        <span style="font-weight: 700">⚠️ CO – ugljen-monoksid</span>
+        <br />
+        🚫 Bezbojan, bez mirisa, bez ukusa · 💨 Lakši od vazduha · ☠️ Veoma
+        otrovan (vezuje hemoglobin 270x brže) · 💥 Eksplozivan: 12,5–74%
+      </div>
+
+      <hr />
+
+      <!-- 3. KLASIFIKACIJA POŽARA -->
+      <h2>🧯 3. Klase požara (A, B, C, D, F)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Klasa</th>
+              <th>Goriva materija</th>
+              <th>Gašenje</th>
+              <th>⚠️ Napomena</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>A</strong></td>
+              <td>Čvrste (drvo, papir, tekstil)</td>
+              <td>💧 Hlađenje (voda)</td>
+              <td>stvara žar</td>
+            </tr>
+            <tr>
+              <td><strong>B</strong></td>
+              <td>Zapaljive tečnosti (benzin, ulja)</td>
+              <td>🧼 Izolacija/gušenje (pena, prah)</td>
+              <td>sklon povratnom paljenju</td>
+            </tr>
+            <tr>
+              <td><strong>C</strong></td>
+              <td>Zapaljivi gasovi (propan, metan)</td>
+              <td>
+                🧯 Gušenje;
+                <span class="danger" style="background: transparent">
+                  ⛔ ZAUSTAVITI CUREĆI GAS
+                </span>
+              </td>
+              <td>stvara eksplozivne smeše</td>
+            </tr>
+            <tr>
+              <td><strong>D</strong></td>
+              <td>Zapaljivi metali (Mg, Al, Na, K)</td>
+              <td>
+                🧂 Specijalni prah, suvi pesak
+                <br />
+                <span class="danger" style="background: transparent">
+                  ⛔ ZABRANJENA VODA!
+                </span>
+              </td>
+              <td>voda → vodonik + kiseonik → eksplozija</td>
+            </tr>
+            <tr>
+              <td><strong>F</strong></td>
+              <td>Ulja i masti (kuhinje)</td>
+              <td>🧪 Wet Chemical (emulgatori + hlađenje)</td>
+              <td>specifično gašenje</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0">
+        <span class="badge">🟢 Mali požar</span>
+        <span class="badge">🟡 Srednji</span>
+        <span class="badge">🟠 Veliki</span>
+        <span class="badge">🔴 Katastrofalni</span>
+        <span class="badge">🏠 Unutrašnji</span>
+        <span class="badge">🌳 Spoljni</span>
+      </div>
+
+      <hr />
+
+      <!-- 4. EKSPLOZIVNA ATMOSFERA -->
+      <h2>💥 4. Eksplozivna atmosfera i zone</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Zona</th>
+              <th>Trajanje</th>
+              <th>Karakteristika</th>
+              <th>Primer</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Zona 0</strong></td>
+              <td>Stalno (&gt;1000h/god)</td>
+              <td>uvek prisutna eksplozivna atmosfera</td>
+              <td>unutrašnjost rezervoara</td>
+            </tr>
+            <tr>
+              <td><strong>Zona 1</strong></td>
+              <td>Povremeno (10–1000h)</td>
+              <td>verovatna u normalnom radu</td>
+              <td>oko ventilacionih otvora</td>
+            </tr>
+            <tr>
+              <td><strong>Zona 2</strong></td>
+              <td>Retko (&lt;10h)</td>
+              <td>javlja se samo u kvaru</td>
+              <td>oko zatvorene opreme</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div
+        style="
+          background: #1e263a;
+          padding: 12px 16px;
+          border-radius: 16px;
+          margin: 12px 0;
+        "
+      >
+        <strong>📉 DGE (Donja granica)</strong>
+        – ispod nje smeša je
+        <span style="color: #8fc9ff">"siromašna"</span>
+        (ne eksplodira) &nbsp;·&nbsp;
+        <strong>📈 GGE (Gornja granica)</strong>
+        – iznad nje smeša je
+        <span style="color: #f7b773">"bogata/zasićena"</span>
+        (ne eksplodira)
+        <br />
+        <span
+          style="background: #2f3a55; padding: 2px 12px; border-radius: 30px"
+        >
+          ⚡ Stehiometrijska smeša = NAJJAČA EKSPLOZIJA
+        </span>
+      </div>
+
+      <hr />
+
+      <!-- 5. EKSPLOZIJA -->
+      <h2>💣 5. Eksplozija – vrste i BLEVE</h2>
+      <div class="row-2col">
+        <div class="col-card">
+          <span style="font-weight: 600">🔊 Detonacija</span>
+          <br />
+          nadzvučno širenje plamena (1000–4000 m/s) · pritisak 10–60 bari
+        </div>
+        <div class="col-card">
+          <span style="font-weight: 600">🌀 Deflagracija</span>
+          <br />
+          podzvučno širenje (0,5–30 m/s) · pritisak 4–10 bari
+        </div>
+      </div>
+      <div
+        style="
+          background: #271f2e;
+          padding: 12px 16px;
+          border-radius: 18px;
+          border: 1px solid #6d4c6b;
+        "
+      >
+        <span style="font-weight: 700; font-size: 1.1rem">
+          🔥 BLEVE – vatrena lopta
+        </span>
+        <br />
+        Sud pod pritiskom (cisterna) se zagreje → puca → tečnost naglo isparava
+        i pali se → ogromna vatrena lopta sa razornim dejstvom.
+      </div>
+
+      <hr />
+
+      <!-- 6. IZVORI PALJENJA -->
+      <h2>⚡ 6. Izvori paljenja (uzročnici požara)</h2>
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px 12px;
+          margin-bottom: 6px;
+        "
+      >
+        <span class="badge">🔥 Otvoreni plamen</span>
+        <span class="badge">
+          ⚡ Električna varnica (kratki spoj, preopterećenje)
+        </span>
+        <span class="badge">
+          🧲 Statički elektricitet (trenje, kidanje kontakta)
+        </span>
+        <span class="badge">🔧 Mehanička varnica (udar, trenje)</span>
+        <span class="badge">♨️ Samopaljenje (biološke/hemijske reakcije)</span>
+      </div>
+
+      <div
+        style="
+          background: #1d2438;
+          border-radius: 16px;
+          padding: 10px 16px;
+          margin: 8px 0;
+        "
+      >
+        <span style="font-weight: 600">🌡️ Prenos toplote:</span>
+        <span class="badge" style="background: #2a3348">
+          1️⃣ Provođenje (kondukcija)
+        </span>
+        <span class="badge" style="background: #2a3348">
+          2️⃣ Strujanje (konvekcija)
+        </span>
+        <span class="badge" style="background: #2a3348">
+          3️⃣ Zračenje (radijacija)
+        </span>
+      </div>
+
+      <div class="note">
+        <strong>🧯 Tipični primeri samopaljenja:</strong>
+        uljane krpe (biljna ulja), vlažna senaža/slama, ugalj, beli fosfor,
+        kalcijum-karbid sa vodom.
+      </div>
+
+      <hr />
+
+      <!-- 7. POSTUPANJE U AKCIDENTU -->
+      <h2>🚨 7. Postupanje u akcidentu + lična zaštita</h2>
+      <div
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+          margin: 8px 0;
+        "
+      >
+        <div style="background: #1c2335; padding: 12px; border-radius: 16px">
+          <span style="font-weight: 600">📋 Prvi koraci</span>
+          <ul class="list-bullet" style="margin-top: 4px">
+            <li>📞 Alarmiranje VSJ</li>
+            <li>🔍 Prikupljanje info (UN broj, Kemler)</li>
+            <li>🚧 Obezbeđenje mesta, sprečavanje istcanja</li>
+            <li>🧑‍🚒 Evakuacija (smer vetra!)</li>
+          </ul>
+        </div>
+        <div style="background: #1c2335; padding: 12px; border-radius: 16px">
+          <span style="font-weight: 600">🧤 Lična zaštitna oprema</span>
+          <ul class="list-bullet">
+            <li>🧤 gumene/plastične rukavice</li>
+            <li>🥾 gumene čizme</li>
+            <li>🧥 zaštitno odelo/kecelja</li>
+            <li>😷 maska / izolacioni aparat</li>
+            <li>🧴 sredstva za ispiranje</li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        style="
+          background: #1f253b;
+          padding: 10px 16px;
+          border-radius: 16px;
+          border-left: 6px solid #43a6a6;
+        "
+      >
+        <span style="font-weight: 600">🆘 Prva pomoć</span>
+        <br />
+        <span class="badge">💨 svež vazduh</span>
+        <span class="badge">📞 hitna pomoć</span>
+        <span class="badge">🚿 ispiranje vodom ≥20 min</span>
+        <span class="badge">❌ ne skidati odeću zalepeljenu za kožu</span>
+        <span class="badge">🚫 ništa na usta ako je osoba u nesvesti</span>
+        <span class="badge">
+          📄 obavestiti medicinsko osoblje o vrsti materije
+        </span>
+      </div>
+
+      <hr />
+
+      <!-- 8. PREVENTIVNE MERE -->
+      <h2>🛡️ 8. Preventivne mere i načini gašenja</h2>
+      <div style="background: #1f263b; padding: 10px 16px; border-radius: 16px">
+        <strong>⛔ Zabranjeno na utovaru/istovaru:</strong>
+        <span class="badge">🔥 otvoren plamen</span>
+        <span class="badge">🚬 pušenje</span>
+        <span class="badge">⚡ alati koji varniče</span>
+        <span class="badge">🚗 rad motora</span>
+        <span class="badge">🔌 nadzemni električni vodovi</span>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0">
+        <span class="badge">❄️ hlađenje</span>
+        <span class="badge">🛑 gušenje</span>
+        <span class="badge">🧱 izolacija</span>
+        <span class="badge">🧪 antikatalitičko</span>
+        <span class="badge">💧 razređivanje</span>
+      </div>
+
+      <hr />
+
+      <!-- TABELA PREPORUKA ZA GAŠENJE -->
+      <h2>🧯 Tabela: preporuke za gašenje (UN broj)</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>UN broj</th>
+              <th>Materija</th>
+              <th>Kemler</th>
+              <th>Sredstvo za gašenje</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1203</td>
+              <td>Benzin</td>
+              <td>33</td>
+              <td>💧 raspršena voda, prah, pena, CO₂</td>
+            </tr>
+            <tr>
+              <td>1202</td>
+              <td>Dizel</td>
+              <td>33</td>
+              <td>💧 raspršena voda, prah, pena, CO₂</td>
+            </tr>
+            <tr>
+              <td>1090</td>
+              <td>Aceton</td>
+              <td>33</td>
+              <td>💧 raspršena voda, prah, CO₂</td>
+            </tr>
+            <tr>
+              <td>1978</td>
+              <td>Propan</td>
+              <td>23</td>
+              <td>
+                <span class="danger" style="background: transparent">
+                  ⛔ Ne gasiti dok curi!
+                </span>
+                prah, CO₂
+              </td>
+            </tr>
+            <tr>
+              <td>1428</td>
+              <td>Natrijum</td>
+              <td>X-423</td>
+              <td>
+                <span class="danger" style="background: transparent">
+                  ⛔ NE VODA!
+                </span>
+                pesak, prah, kreč, grafit
+              </td>
+            </tr>
+            <tr>
+              <td>2257</td>
+              <td>Kalijum</td>
+              <td>X-423</td>
+              <td>
+                <span class="danger" style="background: transparent">
+                  ⛔ NE VODA!
+                </span>
+                pesak, prah, kreč, grafit
+              </td>
+            </tr>
+            <tr>
+              <td>1830</td>
+              <td>Sumporna kiselina</td>
+              <td>88</td>
+              <td>ne gori · prah, CO₂ (izaziva opekotine)</td>
+            </tr>
+            <tr>
+              <td>1381</td>
+              <td>Beli/žuti fosfor</td>
+              <td>436</td>
+              <td>pesak, grafit, poseban tretman</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div
+        style="
+          margin-top: 24px;
+          background: #1a212f;
+          padding: 10px 18px;
+          border-radius: 40px;
+          text-align: center;
+          border: 1px solid #3b445a;
+          font-size: 0.9rem;
+        "
+      >
+        📘 Ključni pojmovi: ADR · UN broj · Kemlerov kod · DGE · GGE · BLEVE ·
+        Backdraft · Flashover · Detonacija · Deflagracija
+      </div>
+    </div>
+  </body>
+</html>
