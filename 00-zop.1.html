@@ -1,0 +1,831 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔥 ZOP – Q&A kartice (šalabajter)</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #0d1117;
+        color: #e6edf3;
+        font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+        padding: 2rem 1rem;
+        line-height: 1.5;
+      }
+      .container {
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        margin-bottom: 0.3rem;
+        background: linear-gradient(135deg, #f97316, #facc15);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+      .subhead {
+        color: #8b949e;
+        margin-bottom: 2rem;
+        border-left: 4px solid #f97316;
+        padding-left: 1rem;
+        font-size: 1.05rem;
+      }
+      .card-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 1.2rem;
+      }
+      .card {
+        background: #161b22;
+        border-radius: 1.2rem;
+        padding: 1.2rem 1.5rem;
+        border: 1px solid #30363d;
+        box-shadow:
+          0 8px 0 #0d1117,
+          0 4px 12px rgba(0, 0, 0, 0.6);
+        transition: 0.15s ease;
+      }
+      .card:hover {
+        border-color: #facc1560;
+        transform: translateY(-2px);
+      }
+      .card .q {
+        font-weight: 700;
+        font-size: 1.08rem;
+        color: #facc15;
+        display: flex;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-bottom: 0.4rem;
+      }
+      .card .q .emoji {
+        font-size: 1.3rem;
+        line-height: 1.2;
+      }
+      .card .a {
+        color: #d1d9e6;
+        font-size: 0.95rem;
+        padding-left: 0.2rem;
+        border-left: 3px solid #f9731640;
+        padding-left: 0.8rem;
+        margin-top: 0.2rem;
+      }
+      .card .a strong {
+        color: #ffa657;
+      }
+      .badge {
+        display: inline-block;
+        background: #21262d;
+        border-radius: 30px;
+        padding: 0.1rem 0.9rem;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: #8b949e;
+        border: 1px solid #30363d;
+        margin-right: 0.4rem;
+      }
+      .tag {
+        display: inline-block;
+        background: #1c2333;
+        border-radius: 12px;
+        padding: 0.1rem 0.7rem;
+        font-size: 0.7rem;
+        color: #b0c4de;
+        border: 1px solid #2d3f4f;
+        margin: 0.2rem 0.2rem 0 0;
+      }
+      .footnote {
+        margin-top: 2.5rem;
+        color: #6e7681;
+        font-size: 0.9rem;
+        text-align: center;
+        border-top: 1px solid #21262d;
+        padding-top: 1.4rem;
+      }
+      @media (max-width: 500px) {
+        .card-grid {
+          grid-template-columns: 1fr;
+        }
+        h1 {
+          font-size: 1.7rem;
+        }
+      }
+      .highlight {
+        color: #facc15;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🧯 ZOP – Q&A kartice</h1>
+      <div class="subhead">
+        📘 Osnovni fundamentalni set · kratki odgovori · prolazna ocena
+      </div>
+      <div class="card-grid">
+        <!-- 1 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">📜</span>
+            Šta je predmet Zakona o ZOP?
+          </div>
+          <div class="a">
+            Uređuje
+            <strong>sistem ZOP</strong>
+            , prava/obaveze subjekata, planiranje, organizaciju vatrogasne
+            službe, nadzor i kaznene odredbe.
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">⚖️</span>
+            Koja su osnovna načela ZOP?
+          </div>
+          <div class="a">
+            <strong>
+              zaštite, prevencije, stalnosti, jačanja svesti, javnosti,
+              saradnje, solidarnosti, odgovornosti.
+            </strong>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">👥</span>
+            Ko su subjekti ZOP?
+          </div>
+          <div class="a">
+            Republika, AP, lokalna samouprava,
+            <strong>pravna lica</strong>
+            (preduzeća, ustanove) i
+            <strong>fizička lica</strong>
+            (građani).
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">📋</span>
+            Kriterijumi kategorizacije?
+          </div>
+          <div class="a">
+            5 kriterijuma: tehnološki proces, vrsta/količina materijala,
+            materijal objekta, značaj/veličina, biljni pokrivač →
+            <strong>I, II, III</strong>
+            kategorija.
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🏢</span>
+            Obaveze I kategorije?
+          </div>
+          <div class="a">
+            <strong>Vatrogasna jedinica</strong>
+            + plan ZOP + stalno dežurstvo (min. 18-42 vatrogasca zavisno od
+            podkategorije).
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">📄</span>
+            Opšti akti u pravnom licu?
+          </div>
+          <div class="a">
+            Plan ZOP, Plan evakuacije, Pravila ZOP,
+            <strong>Program osnovne obuke</strong>
+            (saglasnost MUP).
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🗺️</span>
+            Šta je plan ZOP i ko ga donosi?
+          </div>
+          <div class="a">
+            Dokument o merama ZOP, donose ga
+            <strong>AP, lokalna samouprava, I i II kategorija</strong>
+            . Najvažniji deo:
+            <strong>procena ugroženosti</strong>
+            .
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">📊</span>
+            Elementi procene ugroženosti?
+          </div>
+          <div class="a">
+            Postojeće stanje, numerička analiza, stručno mišljenje, predlog
+            mera, grafički prilozi.
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🏗️</span>
+            Ko izrađuje glavni projekat ZOP?
+          </div>
+          <div class="a">
+            Ovlašćeno pravno lice sa
+            <strong>licenciranim stručnjacima</strong>
+            (VSS tehnički smer + 5 god. iskustva).
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🔍</span>
+            Uloga inspektora ZOP?
+          </div>
+          <div class="a">
+            Nadzor, zabrane, nalaže mere, uviđaj, kontroliše dokumentaciju i
+            izvršenje mera.
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">📦</span>
+            ADR klasifikacija – osnovne klase?
+          </div>
+          <div class="a">
+            <strong>9 klasa:</strong>
+            1-eksploziv, 2-gasovi, 3-zapaljive tečnosti, 4.1-4.3
+            čvrste/samozapaljive/s vodom, 5-oksidanti, 6-otrovi, 7-radioaktivno,
+            8-korozivno, 9-razno.
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🔥</span>
+            Uslovi za gorenje (trougao požara)?
+          </div>
+          <div class="a">
+            <strong>goriva materija + kiseonik + izvor paljenja</strong>
+            .
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🌡️</span>
+            Plamište, samopaljenje, ključanje?
+          </div>
+          <div class="a">
+            <strong>plamište</strong>
+            – najniža temp. da nastavi da gori;
+            <strong>samopaljenje</strong>
+            – bez spoljnog izvora;
+            <strong>ključanje</strong>
+            – napon pare = spoljašnji pritisak.
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">⬇️</span>
+            DGE i GGE – šta su?
+          </div>
+          <div class="a">
+            Donja i gornja granica eksplozivnosti. Ispod DGE =
+            <strong>sromašna</strong>
+            ; iznad GGE =
+            <strong>bogata/zasićena</strong>
+            (ne eksplodira).
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">💣</span>
+            Zone eksplozivne atmosfere?
+          </div>
+          <div class="a">
+            <strong>0</strong>
+            – stalno;
+            <strong>1</strong>
+            – povremeno;
+            <strong>2</strong>
+            – kratkotrajno, retko.
+          </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🅰️🅱️🅲️</span>
+            Klase požara (A, B, C, D, F)?
+          </div>
+          <div class="a">
+            <strong>A</strong>
+            – čvrste;
+            <strong>B</strong>
+            – tečnosti;
+            <strong>C</strong>
+            – gasovi;
+            <strong>D</strong>
+            – metali;
+            <strong>F</strong>
+            – ulja/masti.
+          </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">⚡</span>
+            Detonacija vs deflagracija?
+          </div>
+          <div class="a">
+            <strong>Detonacija</strong>
+            – nadzvučna (>1000 m/s);
+            <strong>deflagracija</strong>
+            – podzvučna (0,5–30 m/s).
+          </div>
+        </div>
+
+        <!-- 18 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">💥</span>
+            Šta je BELEVE eksplozija?
+          </div>
+          <div class="a">
+            Eksplozivno sagorevanje tečne i gasovite faze usled zagrevanja suda
+            (često kod cisterni).
+          </div>
+        </div>
+
+        <!-- 19 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🔥</span>
+            Prenos toplote i izvori paljenja?
+          </div>
+          <div class="a">
+            <strong>kondukcija, konvekcija, radijacija.</strong>
+            Izvori: otvoren plamen, električna/mehanička iskra, statički
+            elektricitet, samopaljenje.
+          </div>
+        </div>
+
+        <!-- 20 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🌫️</span>
+            Nepotpuno sagorevanje – opasan produkt?
+          </div>
+          <div class="a">
+            <strong>Ugljen-monoksid (CO)</strong>
+            – otrovan, bez boje/mirisa, eksplozivan (12,5–74%).
+          </div>
+        </div>
+
+        <!-- 21 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🧱</span>
+            Cilj požarnih sektora?
+          </div>
+          <div class="a">
+            Ograničavanje širenja požara –
+            <strong>vatrootporne konstrukcije</strong>
+            (zidovi, podovi, plafoni).
+          </div>
+        </div>
+
+        <!-- 22 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🚧</span>
+            Protivpožarne prepreke?
+          </div>
+          <div class="a">
+            <strong>vertikalne</strong>
+            (zidovi) i
+            <strong>horizontalne</strong>
+            (podovi, plafoni). Protivpožarna vrata – sa samozatvaračem.
+          </div>
+        </div>
+
+        <!-- 23 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🔥</span>
+            Požarno opterećenje – šta je?
+          </div>
+          <div class="a">
+            Toplotna vrednost svih zapaljivih materija po m² (
+            <strong>MJ/m²</strong>
+            ). Važno za vatrootpornost.
+          </div>
+        </div>
+
+        <!-- 24 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🚒</span>
+            Pristupni putevi – min. širina?
+          </div>
+          <div class="a">
+            Jednosmerno
+            <strong>3,5 m</strong>
+            , dvosmerno
+            <strong>6 m</strong>
+            , unutr. radijus 7 m, nagib <12%, nosivost ≥10 t.
+          </div>
+        </div>
+
+        <!-- 25 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">💧</span>
+            Spoljna i unutrašnja hidrantska mreža?
+          </div>
+          <div class="a">
+            Spoljna – nadzemni/podzemni (rastojanje do 80 m). Unutrašnja –
+            <strong>mokra</strong>
+            (stalno pod pritiskom) i
+            <strong>suva</strong>
+            (bez vode). Min pritisak 2,5 bara.
+          </div>
+        </div>
+
+        <!-- 26 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🛠️</span>
+            Mere pri zavarivanju?
+          </div>
+          <div class="a">
+            Uredba, stalna/privremena mesta,
+            <strong>odobrenje</strong>
+            , vatrogasna straža ≥1h posle radova.
+          </div>
+        </div>
+
+        <!-- 27 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">📚</span>
+            Osnovna obuka – kada?
+          </div>
+          <div class="a">
+            Obavezna za sve,
+            <strong>u roku od 30 dana</strong>
+            od prijema, provera znanja na
+            <strong>3 godine</strong>
+            . Program uz saglasnost MUP.
+          </div>
+        </div>
+
+        <!-- 28 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">⚡</span>
+            Mere protiv statičkog elektriciteta?
+          </div>
+          <div class="a">
+            <strong>Uzemljenje</strong>
+            , povećanje vlažnosti, antistatički podovi, jonizatori.
+          </div>
+        </div>
+
+        <!-- 29 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">⛈️</span>
+            Gromobranska instalacija – osnovni delovi?
+          </div>
+          <div class="a">
+            Prihvatni sistem, spusni provodnici, uzemljenje. Otpor uzemljenja
+            ≤20Ω (za eksplozivne prostore ≤10Ω).
+          </div>
+        </div>
+
+        <!-- 30 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">💦</span>
+            Kako voda gasi?
+          </div>
+          <div class="a">
+            <strong>Hlađenjem</strong>
+            (veliki toplotni kapacitet) i stvaranjem pare (guši).
+          </div>
+        </div>
+
+        <!-- 31 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🎯</span>
+            Načini delovanja sredstava za gašenje?
+          </div>
+          <div class="a">
+            <strong>Hlađenje</strong>
+            (voda),
+            <strong>gušenje</strong>
+            (CO₂, pena),
+            <strong>antikatalitičko</strong>
+            (prah, haloni).
+          </div>
+        </div>
+
+        <!-- 32 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🅰️🅱️🅲️</span>
+            Sredstva za klase A, B, C, D?
+          </div>
+          <div class="a">
+            <strong>A</strong>
+            – voda/pena;
+            <strong>B</strong>
+            – pena/prah/CO₂;
+            <strong>C</strong>
+            – prah/CO₂;
+            <strong>D</strong>
+            – specijalni prah.
+          </div>
+        </div>
+
+        <!-- 33 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🧊</span>
+            CO₂ – način delovanja i opasnost?
+          </div>
+          <div class="a">
+            <strong>Guši</strong>
+            (smanjuje O₂). Opasnost: u zatvorenom prostoru – gušenje (konc. >25%
+            smrtonosna).
+          </div>
+        </div>
+
+        <!-- 34 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🧯</span>
+            Prah (ABC) – do kog napona?
+          </div>
+          <div class="a">
+            <strong>Antikatalitički</strong>
+            , gaši A,B,C i el. uređaje do
+            <strong>1000 V</strong>
+            .
+          </div>
+        </div>
+
+        <!-- 35 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🧼</span>
+            Mehanička pena – kako se dobija?
+          </div>
+          <div class="a">
+            <strong>voda + ekstrakt + vazduh</strong>
+            . Guši i hladi. Koristi se za B i A klase.
+          </div>
+        </div>
+
+        <!-- 36 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🔢</span>
+            Broj penjenja – vrste pene?
+          </div>
+          <div class="a">
+            do 20 –
+            <strong>teška</strong>
+            ; 21–200 –
+            <strong>srednja</strong>
+            ; 201–1000 –
+            <strong>laka</strong>
+            pena.
+          </div>
+        </div>
+
+        <!-- 37 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🌬️</span>
+            Inergen (IG-541) – sastav i način?
+          </div>
+          <div class="a">
+            <strong>52% N₂ + 40% Ar + 8% CO₂</strong>
+            . Guši snižavanjem O₂ na ~15%. Bezbedniji za ljude (do 7 min).
+          </div>
+        </div>
+
+        <!-- 38 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">☠️</span>
+            Zašto su haloni povučeni?
+          </div>
+          <div class="a">
+            Opasni po
+            <strong>ozonski omotač</strong>
+            – zabranjeni.
+          </div>
+        </div>
+
+        <!-- 39 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">💧</span>
+            "Mokra" voda – gde se koristi?
+          </div>
+          <div class="a">
+            Dodatak za smanjenje površinskog napona – bolje prodire u
+            <strong>pamuk, ugalj, slamu</strong>
+            .
+          </div>
+        </div>
+
+        <!-- 40 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🧑‍🚒</span>
+            Lična oprema vatrogasca?
+          </div>
+          <div class="a">
+            Odelo, obuća, šlem, rukavice,
+            <strong>radni (pe:njački) opasač</strong>
+            .
+          </div>
+        </div>
+
+        <!-- 41 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🫁</span>
+            Izolacioni aparat (ICA) – čemu služi?
+          </div>
+          <div class="a">
+            Štiti disajne organe u zadimljenoj atmosferi –
+            <strong>boce sa vazduhom</strong>
+            (200–300 bar).
+          </div>
+        </div>
+
+        <!-- 42 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">✋</span>
+            Razlika ručni / prevozni aparati?
+          </div>
+          <div class="a">
+            <strong>Ručni</strong>
+            do 20 kg – početni požari;
+            <strong>prevozni</strong>
+            do 260 kg – srednji požari.
+          </div>
+        </div>
+
+        <!-- 43 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">💦</span>
+            Prednost vodene magle?
+          </div>
+          <div class="a">
+            Velika površina, hladi, sprečava
+            <em>flashover</em>
+            , 125× efikasnija od punog mlaza.
+          </div>
+        </div>
+
+        <!-- 44 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🚰</span>
+            Unutrašnji hidrant – mokar i suv?
+          </div>
+          <div class="a">
+            <strong>Mokri</strong>
+            – stalno pod pritiskom;
+            <strong>suv</strong>
+            – bez vode (punjenje iz vozila).
+          </div>
+        </div>
+
+        <!-- 45 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🎨</span>
+            Boja boca: acetilen, kiseonik, propan?
+          </div>
+          <div class="a">
+            acetilen –
+            <strong>crvena</strong>
+            ; kiseonik –
+            <strong>plava</strong>
+            ; propan – narandžasta.
+          </div>
+        </div>
+
+        <!-- 46 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🏢</span>
+            Suva hidrantska mreža – gde?
+          </div>
+          <div class="a">
+            Vertikalni cevovod bez vode u
+            <strong>visokim zgradama</strong>
+            , puni se iz vatrogasnih vozila.
+          </div>
+        </div>
+
+        <!-- 47 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🛑</span>
+            Lokalizacija vs likvidacija?
+          </div>
+          <div class="a">
+            <strong>Lokalizacija</strong>
+            – zaustavljanje širenja;
+            <strong>Likvidacija</strong>
+            – potpuno gašenje.
+          </div>
+        </div>
+
+        <!-- 48 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🏠</span>
+            Taktički nastupi?
+          </div>
+          <div class="a">
+            <strong>unutrašnja</strong>
+            (kroz objekat),
+            <strong>spoljašnja</strong>
+            (sa fasade, platforme),
+            <strong>kombinovana</strong>
+            .
+          </div>
+        </div>
+
+        <!-- 49 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">🔥</span>
+            Flashover – šta je?
+          </div>
+          <div class="a">
+            Trenutno sagorevanje svih materijala u prostoriji (temp. ~600°C).
+            Opasno po vatrogasce.
+          </div>
+        </div>
+
+        <!-- 50 -->
+        <div class="card">
+          <div class="q">
+            <span class="emoji">💨</span>
+            Backdraft (plameni udar)?
+          </div>
+          <div class="a">
+            Eksplozivno sagorevanje nakon otvaranja zatvorene prostorije sa
+            vrelim gasovima (bez dovoljno kiseonika).
+          </div>
+        </div>
+      </div>
+      <div class="footnote">
+        📘 ~50 fundamentalnih tačaka · pripremljeno za brzo ponavljanje ·
+        prolazna ocena
+      </div>
+    </div>
+  </body>
+</html>
